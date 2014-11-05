@@ -88,8 +88,9 @@ public class Service {
 			ArrayList<ArrayList<String>> myArray = creator.extractFromJSON(
 					jsonResult, i);
 			BasicConfigurator.configure(); // necessary
-			Model m = creator.modelCreation(myArray,
+			Model m = creator.modelCreation(myArray,"http://"+
 					jsonParser.searchResults.searchDatas.get(i).url);
+			
 			try {
 				creator.writeInFile(m);
 

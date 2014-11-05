@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
@@ -15,7 +17,6 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.apache.jena.riot.Lang;
 import org.apache.log4j.BasicConfigurator;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -32,7 +33,12 @@ public class CreationGraphe {
 	public final static String macSeparator = "/";
 	public final static String windowsSeparator = "\\";
 	public final static String separator = macSeparator;
-
+	
+	public boolean isGoodUrl(String url) { 
+	      Pattern p = Pattern.compile("^[wW]{3}\\.[^\\.]+\\.\\p{Alpha}{1,4}/*.*$"); 
+	      Matcher m = p.matcher(url); 
+	      return m.matches(); 
+	   }
 	public void extractText(String filePath, ArrayList<String> arrayOfWords)
 			throws FileNotFoundException {
 		// Recuperation fichier txt
@@ -69,7 +75,9 @@ public class CreationGraphe {
 
 				JSONObject value = (JSONObject) array.get(j);
 				String uri = (String) value.get("value");
-				keywordAndValues.add(uri);
+				if ( !uri.contains(" ") && !uri.equals("") && !uri.contains("%")){
+					keywordAndValues.add(uri);
+				}
 				//System.out.println("value = " + uri);
 			}
 
@@ -101,16 +109,16 @@ public class CreationGraphe {
 			}
 			else
 			{
-				for(int j=1; j<arrayOfWords.get(i).size();j++ ){
+				for(int j=1; j<arrayOfWords.get(i).size(); j++){
 					P2 = m.createProperty("" +arrayOfWords.get(i).get(j));
 					res2 = m.createResource(""+arrayOfWords.get(i).get(j));
-					m.add(r, P, res);
+					m.add(r, P2, res2);
 				}
 
 			}
 
 		}
-
+		m.write(System.out);
 		return m;
 	}
 
