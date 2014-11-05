@@ -50,8 +50,9 @@ public class DBpediaSpotlightClient extends AnnotationClient {
 
 		try {
 
+			//Comment one of the two line, the first uses dbpedia, the second uses factforge
 			GetMethod getMethod = new GetMethod("http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=select+distinct+*+where+%7B%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2F"+ URLEncoder.encode(query, "utf-8") + "%3E+%3Fp+%3FConcept%7DLIMIT+10%0D%0A%0D%0A&format=json&timeout=30000&debug=on");
-			//GetMethod getMethod = new GetMethod("http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=select+distinct+*+where+%7B%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2F"+ URLEncoder.encode(query, "utf-8") + "%3E+%3Fp+%3FConcept%7DLIMIT+10%0D%0A%0D%0A&format=json&timeout=30000&debug=on");
+			//GetMethod getMethod = new GetMethod("http://factforge.net/sparql.json?query=select+distinct+*+where+%7B+%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2F" + URLEncoder.encode(query, "utf-8") + "%3E+%3Fp+%3FConcept%7D+LIMIT+100%0D%0A&_implicit=false&implicit=true&_equivalent=false&_form=%2Fsparql");
 
 			spotlightResponse = request(getMethod);
 		} catch (UnsupportedEncodingException e) {
