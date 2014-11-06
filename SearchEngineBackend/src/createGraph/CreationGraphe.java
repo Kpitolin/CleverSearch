@@ -75,7 +75,7 @@ public class CreationGraphe {
 
 				JSONObject value = (JSONObject) array.get(j);
 				String uri = (String) value.get("value");
-				if ( !uri.contains(" ") && !uri.equals("") && !uri.contains("%")){
+				if (isGoodUrl( uri) && !uri.contains(" ") && !uri.equals("") && !uri.contains("%")){
 					keywordAndValues.add(uri);
 				}
 				//System.out.println("value = " + uri);

@@ -1,0 +1,7 @@
+#;foo0.xml;foo1.xml;foo2.xml;foo3.xml;foo4.xml;foo5.xml;
+foo0.xml;1;1;0;0;1;1;
+foo1.xml;1;1;0;0;1;1;
+foo2.xml;0;0;1;0;0;0;
+foo3.xml;0;0;0;1;0;0;
+foo4.xml;1;1;0;0;1;1;
+foo5.xml;1;1;0;0;1;1;
