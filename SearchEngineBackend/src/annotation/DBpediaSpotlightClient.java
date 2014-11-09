@@ -19,9 +19,6 @@ import java.io.IOException;
 //import org.jdom2.output.Format;
 //import org.jdom2.output.XMLOutputter;
 
-import scala.util.parsing.json.JSON;
-
-import com.sun.research.ws.wadl.Resource;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

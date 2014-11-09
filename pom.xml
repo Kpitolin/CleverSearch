@@ -4,6 +4,7 @@
   <artifactId>CleverSearch</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
+  
   	<dependency>
   		<groupId>org.json</groupId>
   		<artifactId>json</artifactId>
@@ -48,34 +49,31 @@
         <version>2.0</version>
 </dependency>
 
-  <dependency>
-    <groupId>org.dbpedia.extraction</groupId>
-    <artifactId>core</artifactId>
-    <version>3.9</version>
-  </dependency>
+
 <dependency>
-        <groupId>org.apache.stanbol</groupId>
-        <artifactId>org.apache.stanbol.enhancer.engines.dbpspotlight</artifactId>
-        <version>0.10.0</version>
+	<groupId>com.sun.jersey</groupId>
+	<artifactId>jersey-bundle</artifactId>
+	<version>1.10-b01</version>
 </dependency>
+
+
+<dependency>
+  <groupId>org.scala-lang</groupId>
+  <artifactId>scala-library</artifactId>
+  <version>2.10.4-RC1</version>
+</dependency>
+
+
+
 </dependencies>
 
-<repositories>
- 
-  <repository>
-  <id>maven.aksw.internal</id>
-    <name>University Leipzig, AKSW Maven2 Repository</name>
-    <url>http://maven.aksw.org/archiva/repository/internal</url>
-  </repository>
-  <repository>
-    <id>maven.aksw.snapshots</id>
-    <name>University Leipzig, AKSW Maven2 Repository</name>
-    <url>http://maven.aksw.org/archiva/repository/snapshots</url>
-  </repository>
-   
-</repositories>
 
-  
+ 
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+</properties>
+
   
 
 
