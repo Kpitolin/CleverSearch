@@ -23,22 +23,24 @@ import org.json.JSONObject;
 import service.Service;
 
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
+import com.hp.hpl.jena.rdf.model.Bag;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.RDFWriter;
 import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.rdf.model.Statement;
 
 public class CreationGraphe {
 	public final static String macSeparator = "/";
 	public final static String windowsSeparator = "\\";
 	public final static String separator = macSeparator;
-	
+
 	public boolean isGoodUrl(String url) { 
-	      Pattern p = Pattern.compile("^[wW]{3}\\.[^\\.]+\\.\\p{Alpha}{1,4}/*.*$"); 
-	      Matcher m = p.matcher(url); 
-	      return m.matches(); 
-	   }
+		Pattern p = Pattern.compile("^[wW]{3}\\.[^\\.]+\\.\\p{Alpha}{1,4}/*.*$"); 
+		Matcher m = p.matcher(url); 
+		return m.matches(); 
+	}
 	public void extractText(String filePath, ArrayList<String> arrayOfWords)
 			throws FileNotFoundException {
 		// Recuperation fichier txt
@@ -61,27 +63,27 @@ public class CreationGraphe {
 
 		try{
 
-		JSONArray res=(JSONArray)job.get(""+iter);
-		for (int i = 0; i < res.length(); i++){
+			JSONArray res=(JSONArray)job.get(""+iter);
+			for (int i = 0; i < res.length(); i++){
 
-			ArrayList<String> keywordAndValues =  new ArrayList<String>();
-			JSONObject temp = (JSONObject) res.get(i);
-			String keyword= (String) temp.get("name");
-			JSONArray array=(JSONArray) temp.get("uri");
-			keywordAndValues.add(keyword);
-			//System.out.println("Name = " + keyword);
+				ArrayList<String> keywordAndValues =  new ArrayList<String>();
+				JSONObject temp = (JSONObject) res.get(i);
+				String keyword= (String) temp.get("name");
+				JSONArray array=(JSONArray) temp.get("uri");
+				keywordAndValues.add(keyword);
+				//System.out.println("Name = " + keyword);
 
-			for(int j = 0; j < array.length(); j++){
+				for(int j = 0; j < array.length(); j++){
 
-				JSONObject value = (JSONObject) array.get(j);
-				String uri = (String) value.get("value");
-				if (isGoodUrl( uri) && !uri.contains(" ") && !uri.equals("") && !uri.contains("%")){
-					keywordAndValues.add(uri);
+					JSONObject value = (JSONObject) array.get(j);
+					String uri = (String) value.get("value");
+					if (isGoodUrl( uri) && !uri.contains(" ") && !uri.equals("") && !uri.contains("%") && uri!=null){
+						keywordAndValues.add(uri);
+					}
+					//System.out.println("value = " + uri);
 				}
-				//System.out.println("value = " + uri);
-			}
 
-			resources.add(keywordAndValues);
+				resources.add(keywordAndValues);
 			}
 
 		}
@@ -95,30 +97,44 @@ public class CreationGraphe {
 		Model m = ModelFactory.createDefaultModel();
 		String dbRootUri = "http://dbpedia.org/resource";
 		Resource r = m.createResource(rootUrl);
-		Property P = null;
 		Resource res = null;
-		Property P2 = null;
 		Resource res2 = null;
+		Property P2 = null;
+		Property P = null;
 
 		for (int i = 0; i < arrayOfWords.size(); i++) {
-			if(i == 0){
-				// is a list
-				P = m.createProperty(dbRootUri + "/" + arrayOfWords.get(i).get(0));
-				res = m.createResource(dbRootUri + "/" + arrayOfWords.get(i).get(0));
-				m.add(r, P, res);
-			}
-			else
-			{
-				for(int j=1; j<arrayOfWords.get(i).size(); j++){
-					P2 = m.createProperty("" +arrayOfWords.get(i).get(j));
-					res2 = m.createResource(""+arrayOfWords.get(i).get(j));
-					m.add(r, P2, res2);
+
+
+			for(int j=0; j<arrayOfWords.get(i).size(); j++){
+				if(!arrayOfWords.get(i).get(j).contains("%")){
+					if(j == 0 &&  arrayOfWords.get(i).get(j)!=null){
+						// is a list
+						P = m.createProperty(dbRootUri + "/" + arrayOfWords.get(i).get(j));
+
+						res = m.createResource(dbRootUri + "/" + arrayOfWords.get(i).get(j));
+
+					}
+					else if ( arrayOfWords.get(i).get(j)!=null)
+					{
+
+						P2 = m.createProperty(""+arrayOfWords.get(i).get(j));
+
+						res2 = m.createResource(""+arrayOfWords.get(i).get(j));
+						res.addProperty(P2, res2);
+					}
 				}
 
+
 			}
 
+			r.addProperty(P, res);
+
+
 		}
-		m.write(System.out);
+
+		//m.write(System.out);
+		m.write(System.out, "TTL");
+
 		return m;
 	}
 
@@ -136,25 +152,25 @@ public class CreationGraphe {
 
 	}
 
-//	public void createGraph(String filePath, String rootUrl) {
-//		ArrayList<String> arrayOfWords = new ArrayList<String>();
-//		try {
-//			extractText(filePath, arrayOfWords);
-//		} catch (FileNotFoundException e1) {
-//			// TODO Auto-generated catch block
-//			e1.printStackTrace();
-//		}
-//		// Model creation
-//		BasicConfigurator.configure(); // necessary
-//		Model m = modelCreation(arrayOfWords, rootUrl);
-//
-//		try {
-//			writeInFile(m);
-//
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//	}
+	//	public void createGraph(String filePath, String rootUrl) {
+	//		ArrayList<String> arrayOfWords = new ArrayList<String>();
+	//		try {
+	//			extractText(filePath, arrayOfWords);
+	//		} catch (FileNotFoundException e1) {
+	//			// TODO Auto-generated catch block
+	//			e1.printStackTrace();
+	//		}
+	//		// Model creation
+	//		BasicConfigurator.configure(); // necessary
+	//		Model m = modelCreation(arrayOfWords, rootUrl);
+	//
+	//		try {
+	//			writeInFile(m);
+	//
+	//		} catch (IOException e) {
+	//			e.printStackTrace();
+	//		}
+	//	}
 
 	public static void main(String[] args) throws IOException {
 

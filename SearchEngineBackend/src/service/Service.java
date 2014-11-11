@@ -187,53 +187,6 @@ public class Service {
 	public static void main(String args[]) throws IOException {
 		Service service = new Service();
 		service.launchSearch("obama", null);
-//		GoogleSearch search = new GoogleSearch();
-//		//String jsonGenere = search.search("obama", null);
-//
-//		DBpediaSpotlightClient annotation = new DBpediaSpotlightClient();
-//		CreationGraphe creator = new CreationGraphe();
-//
-//		try {
-//			annotateAndCreateGraph("searchResults.json", annotation, creator);
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//		compareRDF compare = new compareRDF();
-//		compare.creerMatriceSimilarite("extendedGraph");
-/*
-		ExplorationMatrice explorer = new ExplorationMatrice();
-		List<String> listeURLJaccardFort = new ArrayList<String>();
-		List<String> listeURLJaccardMoyen = new ArrayList<String>();
-		List<String> listeURLJaccardFaible = new ArrayList<String>();
-		
-		ArrayList<SearchData> searchDatas = new ArrayList<SearchData>();
-
-		try {
-			searchDatas = annotateAndCreateGraph(jsonGenere, annotation,
-					creator);
-		} catch (Exception e) {
-			System.out
-					.println("probleme d'annotation ou de creation des graphes rdf");
-		}
-		
-		for (int i = 0; i < 3; i++) {
-			if (i == 0) {
-				explorer.exploreSimiliratyFromCSV("extendedGraph" + separator
-						+ "matriceSimilarite.csv", 0, SEUILJACCARDFAIBLE, searchDatas );
-				// recuperer les url les placer dans la liste listeURLJaccardFaible
-			} /*else if (i == 1) {
-				explorer.exploreSimiliratyFromCSV("extendedGraph" + separator
-						+ "matriceSimilarite.csv", SEUILJACCARDFAIBLE, SEUILJACCARDMOYEN);
-				// recuperer les url les placer dans la liste listeURLJaccardMoyen
-			} else if (i == 2) {
-				explorer.exploreSimiliratyFromCSV("extendedGraph" + separator
-						+ "matriceSimilarite.csv", SEUILJACCARDMOYEN, SEUILJACCARDFORT);
-				// recuperer les url les placer dans la liste listeURLJaccardFort
-				
-			}
-		}*/
 
 	}
 }
