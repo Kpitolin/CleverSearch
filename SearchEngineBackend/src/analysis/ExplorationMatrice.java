@@ -59,7 +59,7 @@ public class ExplorationMatrice {
 		// traitement des donn�es
 		for (String[] oneData : data) {
 			int i = 1;
-			double indiceJaccard = Double.parseDouble(oneData[i]);
+			double indiceJaccard = Double.parseDouble(oneData[i].replace(",", "."));
 
 			String noeud1 = oneData[0]; // premiere colonne du csv contenant
 										// egalement que le nom de chaque page
@@ -92,7 +92,7 @@ public class ExplorationMatrice {
 					listLinks.add(aLink);
 				}
 				i++;
-				indiceJaccard = Double.parseDouble(oneData[i]);
+				indiceJaccard = Double.parseDouble(oneData[i].replace(",", "."));
 			}
 		}
 		// merge des deux liste(deux objets) nodes et links dans l'objet json

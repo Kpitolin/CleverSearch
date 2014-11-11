@@ -35,6 +35,7 @@ public class Service {
 
 	public ArrayList<AnalyseResults> launchSearch(String query, String label)
 			throws IOException {
+		
 		GoogleSearch search = new GoogleSearch();
 		//String jsonGenere = search.search(query, label);
 		String jsonGenere = "searchResults.json";
@@ -57,15 +58,18 @@ public class Service {
 		ExplorationMatrice explorer = new ExplorationMatrice();
 		org.json.simple.JSONObject jsonObj1 = explorer.exploreSimiliratyFromCSV("extendedGraph"
 				+ separator + "matriceSimilarite.csv", 0, 0.02,searchDatas);
-
+		/*
 		org.json.simple.JSONObject jsonObj2 = explorer.exploreSimiliratyFromCSV("extendedGraph"
 				+ separator + "matriceSimilarite.csv", 0.02,0.1,searchDatas);
 
 		org.json.simple.JSONObject jsonObj3 = explorer.exploreSimiliratyFromCSV("extendedGraph"
 				+ separator + "matriceSimilarite.csv", 0.1,0.2,searchDatas);
+	*/
 
 		AnalyseResults results1 = new AnalyseResults(searchDatas, jsonObj1);
-		AnalyseResults results2 = new AnalyseResults(searchDatas, jsonObj2);
+		//System.out.println(jsonObj1.toJSONString());
+		
+		/*AnalyseResults results2 = new AnalyseResults(searchDatas, jsonObj2);
 		AnalyseResults results3 = new AnalyseResults(searchDatas, jsonObj3);
 		
 		ArrayList<AnalyseResults> results = new ArrayList<AnalyseResults>();
@@ -75,6 +79,8 @@ public class Service {
 		results.add(results3);
 		
 		return results;
+		*/
+		return null;
 	}
 
 	public static ArrayList<SearchData> annotateAndCreateGraph(

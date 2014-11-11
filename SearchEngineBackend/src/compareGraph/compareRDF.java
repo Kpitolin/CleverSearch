@@ -378,15 +378,15 @@ public class compareRDF {
 			}
 			writer.close();
 
-									listeFichiers = listerRepertoire(pathname);
-									for (int k = 0; k < listeFichiers.length; k++) {
-										System.out.println(listeFichiers[k]) ;
-										if (!listeFichiers[k].equals("matriceSimilarite.csv")) {
-											System.out.println(listeFichiers[k]  +  "   SUPPR");
-											File supp = new File(pathname + "" + separator + listeFichiers[k]);
-											supp.delete();
-										}
-									}
+//									listeFichiers = listerRepertoire(pathname);
+//									for (int k = 0; k < listeFichiers.length; k++) {
+//										System.out.println(listeFichiers[k]) ;
+//										if (!listeFichiers[k].equals("matriceSimilarite.csv")) {
+//											System.out.println(listeFichiers[k]  +  "   SUPPR");
+//											File supp = new File(pathname + "" + separator + listeFichiers[k]);
+//											supp.delete();
+//										}
+//									}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
