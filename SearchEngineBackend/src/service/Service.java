@@ -37,8 +37,8 @@ public class Service {
 			throws IOException {
 		
 		GoogleSearch search = new GoogleSearch();
-		//String jsonGenere = search.search(query, label);
-		String jsonGenere = "searchResults.json";
+		String jsonGenere = search.search(query, label);
+//		String jsonGenere = "searchResults.json";
 		DBpediaSpotlightClient annotation = new DBpediaSpotlightClient();
 		CreationGraphe creator = new CreationGraphe();
 
@@ -66,7 +66,7 @@ public class Service {
 				+ separator + "matriceSimilarite.csv", 0.1,0.2,searchDatas);
 	*/
 
-		AnalyseResults results1 = new AnalyseResults(searchDatas, jsonObj1);
+		//AnalyseResults results1 = new AnalyseResults(searchDatas, jsonObj1);
 		//System.out.println(jsonObj1.toJSONString());
 		
 		/*AnalyseResults results2 = new AnalyseResults(searchDatas, jsonObj2);

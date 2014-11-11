@@ -1,0 +1,611 @@
+{
+ "kind": "customsearch#search",
+ "url": {
+  "type": "application/json",
+  "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+ },
+ "queries": {
+  "nextPage": [
+   {
+    "title": "Google Custom Search - obama",
+    "totalResults": "108000000",
+    "searchTerms": "obama",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "006463225579681566849:zklgocryvzk"
+   }
+  ],
+  "request": [
+   {
+    "title": "Google Custom Search - obama",
+    "totalResults": "108000000",
+    "searchTerms": "obama",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "006463225579681566849:zklgocryvzk"
+   }
+  ]
+ },
+ "context": {
+  "title": "ws-h4301-cse",
+  "facets": [
+   [
+    {
+     "label": "actualite",
+     "anchor": "actualite",
+     "label_with_op": "more:actualite"
+    }
+   ],
+   [
+    {
+     "label": "livres",
+     "anchor": "livres",
+     "label_with_op": "more:livres"
+    }
+   ],
+   [
+    {
+     "label": "encyclopedie",
+     "anchor": "encyclopedie",
+     "label_with_op": "more:encyclopedie"
+    }
+   ],
+   [
+    {
+     "label": "voyages",
+     "anchor": "voyages",
+     "label_with_op": "more:voyages"
+    }
+   ],
+   [
+    {
+     "label": "sport",
+     "anchor": "sport",
+     "label_with_op": "more:sport"
+    }
+   ],
+   [
+    {
+     "label": "forum",
+     "anchor": "forum",
+     "label_with_op": "more:forum"
+    }
+   ],
+   [
+    {
+     "label": "achat",
+     "anchor": "achat",
+     "label_with_op": "more:achat"
+    }
+   ]
+  ]
+ },
+ "searchInformation": {
+  "searchTime": 0.284605,
+  "formattedSearchTime": "0,28",
+  "totalResults": "108000000",
+  "formattedTotalResults": "108 000 000"
+ },
+ "items": [
+  {
+   "kind": "customsearch#result",
+   "title": "Barack Obama - Wikipedia, the free encyclopedia",
+   "htmlTitle": "Barack \u003cb\u003eObama\u003c/b\u003e - Wikipedia, the free encyclopedia",
+   "link": "http://en.wikipedia.org/wiki/Barack_Obama",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "In 2004, Obama received national attention during his campaign to represent \nIllinois in the United States Senate with his victory in the March Democratic Party\n ...",
+   "htmlSnippet": "In 2004, \u003cb\u003eObama\u003c/b\u003e received national attention during his campaign to represent \u003cbr\u003e\nIllinois in the United States Senate with his victory in the March Democratic Party\u003cbr\u003e\n&nbsp;...",
+   "formattedUrl": "en.wikipedia.org/wiki/Barack_Obama",
+   "htmlFormattedUrl": "en.wikipedia.org/wiki/Barack_\u003cb\u003eObama\u003c/b\u003e",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/220px-President_Barack_Obama.jpg",
+      "type": "1",
+      "width": "176",
+      "height": "220"
+     }
+    ],
+    "hcard": [
+     {
+      "fn": "Barack Obama",
+      "nickname": "Barack Hussein Obama II",
+      "bday": "2009-01-20",
+      "label": "White House (official) Chicago, Illinois (private)"
+     },
+     {
+      "fn": "Barack Obama"
+     }
+    ]
+   },
+   "labels": [
+    {
+     "name": "encyclopedie",
+     "displayName": "encyclopedie",
+     "label_with_op": "more:encyclopedie"
+    }
+   ]
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Barack Obama — Wikipédia",
+   "htmlTitle": "Barack \u003cb\u003eObama\u003c/b\u003e — Wikipédia",
+   "link": "http://fr.wikipedia.org/wiki/Barack_Obama",
+   "displayLink": "fr.wikipedia.org",
+   "snippet": "Barack Hussein Obama II, né le 4 août 1961 à Honolulu (Hawaï), est un homme \nd'État américain. Il est l'actuel et le 44e président des États-Unis, élu pour un ...",
+   "htmlSnippet": "Barack Hussein \u003cb\u003eObama\u003c/b\u003e II, né le 4 août 1961 à Honolulu (Hawaï), est un homme \u003cbr\u003e\nd&#39;État américain. Il est l&#39;actuel et le 44\u003csup\u003ee\u003c/sup\u003e président des États-Unis, élu pour un&nbsp;...",
+   "cacheId": "YI_SzhQ1BicJ",
+   "formattedUrl": "fr.wikipedia.org/wiki/Barack_Obama",
+   "htmlFormattedUrl": "fr.wikipedia.org/wiki/Barack_\u003cb\u003eObama\u003c/b\u003e",
+   "labels": [
+    {
+     "name": "encyclopedie",
+     "displayName": "encyclopedie",
+     "label_with_op": "more:encyclopedie"
+    }
+   ]
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Barack Obama - Bio, News, Photos - Washington Times",
+   "htmlTitle": "Barack \u003cb\u003eObama\u003c/b\u003e - Bio, News, Photos - Washington Times",
+   "link": "http://www.washingtontimes.com/topics/barack-obama/",
+   "displayLink": "www.washingtontimes.com",
+   "snippet": "Latest news and commentary on Barack Obama including photos, videos, \nquotations, and a biography.",
+   "htmlSnippet": "Latest news and commentary on Barack \u003cb\u003eObama\u003c/b\u003e including photos, videos, \u003cbr\u003e\nquotations, and a biography.",
+   "cacheId": "MMgROYHbQHIJ",
+   "formattedUrl": "www.washingtontimes.com/topics/barack-obama/",
+   "htmlFormattedUrl": "www.washingtontimes.com/topics/barack-\u003cb\u003eobama\u003c/b\u003e/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://media.washtimes.com/media/topics/icons/Obamas_Recovery_Summit_BP_June19_s100x67.jpg?32c569b575b6e71b8dc8911a38c2c29ad4aa751c",
+      "type": "1",
+      "width": "91",
+      "height": "61"
+     }
+    ],
+    "metatags": [
+     {
+      "bitly-verification": "d180fd45f70d",
+      "msvalidate.01": "5B44585918D69318CA2120B5FA20D85C",
+      "viewport": "width=device-width, initial-scale=1, user-scalable=yes",
+      "format-detection": "telephone=no",
+      "author": "The Washington Times http://www.washingtontimes.com",
+      "serverf": "www3-dev"
+     }
+    ]
+   },
+   "labels": [
+    {
+     "name": "actualite",
+     "displayName": "actualite",
+     "label_with_op": "more:actualite"
+    }
+   ]
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Barack Obama",
+   "htmlTitle": "Barack \u003cb\u003eObama\u003c/b\u003e",
+   "link": "http://www.cnn.com/ELECTION/2008/candidates/barack.obama.html",
+   "displayLink": "www.cnn.com",
+   "snippet": "Who's a contender in the White House race in 2008? The presidential candidates \n-- or even those just mentioned -- represent an array of backgrounds and ...",
+   "htmlSnippet": "Who&#39;s a contender in the White House race in 2008? The presidential candidates \u003cbr\u003e\n-- or even those just mentioned -- represent an array of backgrounds and&nbsp;...",
+   "cacheId": "A1z_n6Twq2cJ",
+   "formattedUrl": "www.cnn.com/ELECTION/2008/candidates/barack.obama.html",
+   "htmlFormattedUrl": "www.cnn.com/ELECTION/2008/candidates/barack.\u003cb\u003eobama\u003c/b\u003e.html",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://i.cdn.turner.com/cnn/ELECTION/2008/candidates/images/09/215x280/obama.jpg",
+      "type": "1",
+      "width": "172",
+      "height": "224"
+     }
+    ],
+    "metatags": [
+     {
+      "title": "Election Center 2008: Candidates - Election & Politics News from CNN.com"
+     }
+    ]
+   },
+   "labels": [
+    {
+     "name": "actualite",
+     "displayName": "actualite",
+     "label_with_op": "more:actualite"
+    }
+   ]
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Obama, Fukui - Wikipedia, the free encyclopedia",
+   "htmlTitle": "\u003cb\u003eObama\u003c/b\u003e, Fukui - Wikipedia, the free encyclopedia",
+   "link": "http://en.wikipedia.org/wiki/Obama,_Fukui",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "Obama (小浜市, Obama-shi) is a city in Fukui Prefecture, Japan. It faces Wakasa \nBay due north of Kyoto, and is about four to seven hours by train from Tokyo.",
+   "htmlSnippet": "\u003cb\u003eObama\u003c/b\u003e (小浜市, \u003cb\u003eObama\u003c/b\u003e-shi) is a city in Fukui Prefecture, Japan. It faces Wakasa \u003cbr\u003e\nBay due north of Kyoto, and is about four to seven hours by train from Tokyo.",
+   "cacheId": "2kiMPZl8208J",
+   "formattedUrl": "en.wikipedia.org/wiki/Obama,_Fukui",
+   "htmlFormattedUrl": "en.wikipedia.org/wiki/\u003cb\u003eObama\u003c/b\u003e,_Fukui",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Obama_in_Fukui_prefecture_Ja.svg/250px-Obama_in_Fukui_prefecture_Ja.svg.png",
+      "type": "1",
+      "width": "200",
+      "height": "192"
+     }
+    ],
+    "hcard": [
+     {
+      "fn": "Obama",
+      "nickname": "小浜市",
+      "url": "www1.city.obama.fukui.jp",
+      "url_text": "www1.city.obama.fukui.jp",
+      "category": "City"
+     }
+    ]
+   },
+   "labels": [
+    {
+     "name": "encyclopedie",
+     "displayName": "encyclopedie",
+     "label_with_op": "more:encyclopedie"
+    }
+   ]
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Michelle Obama - Bio, News, Photos - Washington Times",
+   "htmlTitle": "Michelle \u003cb\u003eObama\u003c/b\u003e - Bio, News, Photos - Washington Times",
+   "link": "http://www.washingtontimes.com/topics/michelle-obama/",
+   "displayLink": "www.washingtontimes.com",
+   "snippet": "Latest news and commentary on Michelle Obama including photos, videos, \nquotations, and a biography.",
+   "htmlSnippet": "Latest news and commentary on Michelle \u003cb\u003eObama\u003c/b\u003e including photos, videos, \u003cbr\u003e\nquotations, and a biography.",
+   "cacheId": "5r2NmqJJ_nAJ",
+   "formattedUrl": "www.washingtontimes.com/topics/michelle-obama/",
+   "htmlFormattedUrl": "www.washingtontimes.com/topics/michelle-\u003cb\u003eobama\u003c/b\u003e/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://media.washtimes.com/media/image/2014/11/04/governor-maryland-michelle-obamajpeg-090b9_c0-166-4146-2582_s326x190.jpg?c5e4dafa4207a9c29b0454c13e57ca8a681825f4",
+      "type": "1",
+      "width": "260",
+      "height": "152"
+     }
+    ],
+    "metatags": [
+     {
+      "bitly-verification": "d180fd45f70d",
+      "msvalidate.01": "5B44585918D69318CA2120B5FA20D85C",
+      "viewport": "width=device-width, initial-scale=1, user-scalable=yes",
+      "format-detection": "telephone=no",
+      "author": "The Washington Times http://www.washingtontimes.com",
+      "serverf": "www3-dev"
+     }
+    ]
+   },
+   "labels": [
+    {
+     "name": "actualite",
+     "displayName": "actualite",
+     "label_with_op": "more:actualite"
+    }
+   ]
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Barack Obama Fast Facts - CNN.com",
+   "htmlTitle": "Barack \u003cb\u003eObama\u003c/b\u003e Fast Facts - CNN.com",
+   "link": "http://www.cnn.com/2012/12/26/us/barack-obama---fast-facts/",
+   "displayLink": "www.cnn.com",
+   "snippet": "Sep 1, 2014 ... Here's a look at the life of Barack Obama, the 44th president of the United States.",
+   "htmlSnippet": "Sep 1, 2014 \u003cb\u003e...\u003c/b\u003e Here&#39;s a look at the life of Barack \u003cb\u003eObama\u003c/b\u003e, the 44th president of the United States.",
+   "formattedUrl": "www.cnn.com/2012/12/26/us/barack-obama---fast-facts/",
+   "htmlFormattedUrl": "www.cnn.com/2012/12/26/us/barack-\u003cb\u003eobama\u003c/b\u003e---fast-facts/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://i2.cdn.turner.com/cnn/dam/assets/140804125609-01-obama-birthday-0804-restricted-story-top.jpg",
+      "type": "1",
+      "width": "300",
+      "height": "168"
+     }
+    ],
+    "newsarticle": [
+     {
+      "genre": "news",
+      "inlanguage": "en-US",
+      "description": "Here's a look at the life of Barack Obama, the 44th president of the United States.",
+      "author": "CNN Library",
+      "articlesection": "us",
+      "sourceorganization": "CNN",
+      "datepublished": "2012-12-26T19:39:38Z",
+      "datemodified": "2014-09-01T20:15:12Z",
+      "datecreated": "2012-12-26T19:39:38Z",
+      "headline": "Barack Obama Fast Facts",
+      "url": "http://www.cnn.com/2012/12/26/us/barack-obama---fast-facts/index.html",
+      "thumbnailurl": "http://i2.cdn.turner.com/cnn/dam/assets/140804125609-01-obama-birthday-0804-restricted-story-top.jpg"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=1024",
+      "medium": "news",
+      "title": "Barack Obama Fast Facts - CNN.com",
+      "author": "CNN Library",
+      "section": "us",
+      "source": "CNN",
+      "pubdate": "2012-12-26T19:39:38Z",
+      "lastmod": "2014-09-01T20:15:12Z",
+      "og:title": "Barack Obama Fast Facts",
+      "og:type": "article",
+      "og:url": "http://www.cnn.com/2012/12/26/us/barack-obama---fast-facts/index.html",
+      "og:site_name": "CNN",
+      "og:image": "http://i2.cdn.turner.com/cnn/dam/assets/140804125609-01-obama-birthday-0804-restricted-story-top.jpg",
+      "vr:canonical": "http://www.cnn.com/2012/12/26/us/barack-obama---fast-facts/index.html",
+      "fb:page_id": "129343697106537",
+      "fb:app_id": "80401312489",
+      "twitter:card": "summary_large_image",
+      "twitter:site": "@CNN",
+      "twitter:site:id": "759251",
+      "twitter:creator": "@CNN",
+      "twitter:creator:id": "759251",
+      "twitter:description": "Here's a look at the life of Barack Obama, the 44th president of the United States.",
+      "twitter:title": "Barack Obama Fast Facts",
+      "twitter:url": "http://www.cnn.com/2012/12/26/us/barack-obama---fast-facts/index.html"
+     }
+    ]
+   },
+   "labels": [
+    {
+     "name": "actualite",
+     "displayName": "actualite",
+     "label_with_op": "more:actualite"
+    }
+   ]
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "President Obama Talks to Thomas L. Friedman About Iraq, Putin ...",
+   "htmlTitle": "President \u003cb\u003eObama\u003c/b\u003e Talks to Thomas L. Friedman About Iraq, Putin \u003cb\u003e...\u003c/b\u003e",
+   "link": "http://www.nytimes.com/2014/08/09/opinion/president-obama-thomas-l-friedman-iraq-and-world-affairs.html",
+   "displayLink": "www.nytimes.com",
+   "snippet": "Aug 8, 2014 ... President Obama's hair is definitely grayer these days, and no doubt trying to \nmanage foreign policy in a world of increasing disorder accounts ...",
+   "htmlSnippet": "Aug 8, 2014 \u003cb\u003e...\u003c/b\u003e President \u003cb\u003eObama&#39;s\u003c/b\u003e hair is definitely grayer these days, and no doubt trying to \u003cbr\u003e\nmanage foreign policy in a world of increasing disorder accounts&nbsp;...",
+   "formattedUrl": "www.nytimes.com/.../president-obama-thomas-l-friedman-iraq-and-world- affairs.html",
+   "htmlFormattedUrl": "www.nytimes.com/.../president-\u003cb\u003eobama\u003c/b\u003e-thomas-l-friedman-iraq-and-world- affairs.html",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://static01.nyt.com/images/2014/08/09/multimedia/obama-friedman-full/obama-friedman-full-videoSixteenByNine540.jpg",
+      "type": "1",
+      "width": "299",
+      "height": "168"
+     }
+    ],
+    "organization": [
+     {
+      "name": "The New York Times Company",
+      "tickersymbol": "NYSE NYT"
+     }
+    ],
+    "person": [
+     {
+      "name": "Thomas L. Friedman"
+     }
+    ],
+    "newsarticle": [
+     {
+      "alternativeheadline": "Obama on the World",
+      "description": "In a wide-ranging interview, the president explains American policy on Iraq, Putin and the Israelis and Palestinians.",
+      "genre": "Op-Ed",
+      "identifier": "100000003047624",
+      "usageterms": "http://www.nytimes.com/content/help/rights/sale/terms-of-sale.html",
+      "inlanguage": "en-US",
+      "datepublished": "2014-08-08",
+      "articlesection": "Opinion",
+      "datemodified": "2014-11-08",
+      "thumbnailurl": "http://static01.nyt.com/images/2010/09/16/opinion/Friedman_New/Friedman_New-thumbStandard.jpg",
+      "headline": "President Obama Talks to Thomas L. Friedman About Iraq, Putin and Israel",
+      "copyrightholder": "Video by Leslye Davis, A.J. Chavar, Abe Sater and David Frank on Publish Date August 9, 2014.",
+      "articlebody": "President Obama’s hair is definitely grayer these days, and no doubt trying to manage foreign policy in a world of increasing disorder accounts for at least half of those gray hairs. (The...",
+      "printedition": "New York edition",
+      "copyrightnotice": "© 2014 The New York Times Company",
+      "copyrightyear": "2014"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
+      "sourceapp": "nyt-v5",
+      "applicationname": "article",
+      "foundation-build-id": "20141106-211453",
+      "hdl_p": "Obama on the World",
+      "channels": "NytNow",
+      "articleid": "100000003047624",
+      "usageterms": "http://www.nytimes.com/content/help/rights/sale/terms-of-sale.html",
+      "hdl": "President Obama Talks to Thomas L. Friedman About Iraq, Putin and Israel",
+      "col": "Op-Ed Columnist",
+      "pdate": "20140808",
+      "utime": "20141108000305",
+      "ptime": "20140808220105",
+      "displaydate": "Aug. 8, 2014",
+      "dat": "Aug. 8, 2014",
+      "lp": "In a wide-ranging interview, the president explains American policy on Iraq, Putin and the Israelis and Palestinians.",
+      "msapplication-starturl": "http://www.nytimes.com",
+      "cre": "The New York Times",
+      "slug": "09friedman",
+      "article:collection": "http://json8.nytimes.com/services/json/sectionfronts/opinion/index.jsonp",
+      "sectionfront_jsonp": "http://json8.nytimes.com/services/json/sectionfronts/opinion/index.jsonp",
+      "og:url": "http://www.nytimes.com/2014/08/09/opinion/president-obama-thomas-l-friedman-iraq-and-world-affairs.html",
+      "og:type": "article",
+      "og:title": "President Obama Talks to Thomas L. Friedman About Iraq, Putin and Israel",
+      "og:description": "In a wide-ranging interview, the president explains American policy on Iraq, Putin and the Israelis and Palestinians.",
+      "article:published": "2014-08-08",
+      "article:section": "Opinion",
+      "fb:app_id": "9869919170",
+      "twitter:url": "http://www.nytimes.com/2014/08/09/opinion/president-obama-thomas-l-friedman-iraq-and-world-affairs.html",
+      "twitter:title": "President Obama Talks to Thomas L. Friedman About Iraq, Putin and Israel",
+      "twitter:description": "In a wide-ranging interview, the president explains American policy on Iraq, Putin and the Israelis and Palestinians.",
+      "author": "Thomas L. Friedman",
+      "tone": "opinion",
+      "byl": "By THOMAS L. FRIEDMAN",
+      "pt": "article",
+      "cg": "opinion",
+      "pst": "Op-Ed",
+      "tom": "Op-Ed",
+      "edt": "NewYork",
+      "og:image": "http://static01.nyt.com/images/2010/09/16/opinion/Friedman_New/Friedman_New-superJumbo.jpg",
+      "article:author": "http://topics.nytimes.com/top/opinion/editorialsandoped/oped/columnists/thomaslfriedman/index.html",
+      "article:tag": "United States International Relations",
+      "des": "United States International Relations",
+      "per": "Obama, Barack",
+      "geo": "Iraq",
+      "org": "Islamic State in Iraq and Syria (ISIS)"
+     }
+    ],
+    "imageobject": [
+     {
+      "url": "http://static01.nyt.com/images/2014/08/08/opinion/0809oped/0809oped-master180.jpg",
+      "height": "236",
+      "width": "180",
+      "caption": "Credit Matt Dorfman",
+      "description": "Credit Matt Dorfman",
+      "copyrightholder": "Credit Matt Dorfman"
+     }
+    ]
+   },
+   "labels": [
+    {
+     "name": "actualite",
+     "displayName": "actualite",
+     "label_with_op": "more:actualite"
+    }
+   ]
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "5 takeaways from Obama's ISIS speech - CNN.com",
+   "htmlTitle": "5 takeaways from \u003cb\u003eObama&#39;s\u003c/b\u003e ISIS speech - CNN.com",
+   "link": "http://www.cnn.com/2014/09/11/politics/obama-speech-5-takeaways/",
+   "displayLink": "www.cnn.com",
+   "snippet": "Sep 11, 2014 ... When President Obama announced his plan Wednesday night to launch air \nstrikes in Syria against ISIS, he opened a new chapter in the ...",
+   "htmlSnippet": "Sep 11, 2014 \u003cb\u003e...\u003c/b\u003e When President \u003cb\u003eObama\u003c/b\u003e announced his plan Wednesday night to launch air \u003cbr\u003e\nstrikes in Syria against ISIS, he opened a new chapter in the&nbsp;...",
+   "formattedUrl": "www.cnn.com/2014/09/11/politics/obama-speech-5-takeaways/",
+   "htmlFormattedUrl": "www.cnn.com/2014/09/11/politics/\u003cb\u003eobama\u003c/b\u003e-speech-5-takeaways/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://i2.cdn.turner.com/cnn/dam/assets/140911012755-orig-jag-potus-on-isis-00000714-story-top.jpg",
+      "type": "1",
+      "width": "300",
+      "height": "168"
+     }
+    ],
+    "newsarticle": [
+     {
+      "genre": "news",
+      "inlanguage": "en-US",
+      "description": "When President Obama announced his plan Wednesday night to launch air strikes in Syria against ISIS, he opened a new chapter in the American war on Islamic extremism. Click here to get all...",
+      "keywords": "President Obama,ISIS,Syria,Congress,Terrorism,ISIL",
+      "author": "Z. Byron Wolf, CNN",
+      "articlesection": "politics",
+      "sourceorganization": "CNN",
+      "datepublished": "2014-09-11T04:34:55Z",
+      "datemodified": "2014-09-11T16:43:01Z",
+      "datecreated": "2014-09-11T04:34:55Z",
+      "headline": "5 takeaways from Obama's ISIS speech",
+      "url": "http://www.cnn.com/2014/09/11/politics/obama-speech-5-takeaways/index.html",
+      "thumbnailurl": "http://i2.cdn.turner.com/cnn/dam/assets/140911012755-orig-jag-potus-on-isis-00000714-story-top.jpg"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=1024",
+      "medium": "news",
+      "title": "5 takeaways from Obama's ISIS speech - CNN.com",
+      "news_keywords": "President Obama,ISIS,Syria,Congress,Terrorism,ISIL",
+      "author": "Z. Byron Wolf, CNN",
+      "section": "politics",
+      "source": "CNN",
+      "pubdate": "2014-09-11T04:34:55Z",
+      "lastmod": "2014-09-11T16:43:01Z",
+      "og:title": "5 takeaways from Obama's ISIS speech",
+      "og:type": "article",
+      "og:url": "http://www.cnn.com/2014/09/11/politics/obama-speech-5-takeaways/index.html",
+      "og:site_name": "CNN",
+      "og:image": "http://i2.cdn.turner.com/cnn/dam/assets/140911012755-orig-jag-potus-on-isis-00000714-story-top.jpg",
+      "vr:canonical": "http://www.cnn.com/2014/09/11/politics/obama-speech-5-takeaways/index.html",
+      "fb:page_id": "129343697106537",
+      "fb:app_id": "80401312489",
+      "twitter:card": "summary_large_image",
+      "twitter:site": "@CNN",
+      "twitter:site:id": "759251",
+      "twitter:creator": "@cnnpolitics",
+      "twitter:creator:id": "13850422",
+      "twitter:description": "When President Obama announced his plan Wednesday night to launch air strikes in Syria against ISIS, he opened a new chapter in the American war on Islamic extremism. Click here to get all the facts on President Obama's speech to the nation on his new strategy to combat ISIS with air strikes in Iraq and Syria. Or click here to read the transcript.",
+      "twitter:title": "5 takeaways from Obama's ISIS speech",
+      "twitter:url": "http://www.cnn.com/2014/09/11/politics/obama-speech-5-takeaways/index.html",
+      "twitter:image:src": "http://i2.cdn.turner.com/cnn/dam/assets/140911012755-orig-jag-potus-on-isis-00000714-left-tease.jpg"
+     }
+    ]
+   },
+   "labels": [
+    {
+     "name": "actualite",
+     "displayName": "actualite",
+     "label_with_op": "more:actualite"
+    }
+   ]
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Presidency of Barack Obama - Wikipedia, the free encyclopedia",
+   "htmlTitle": "Presidency of Barack \u003cb\u003eObama\u003c/b\u003e - Wikipedia, the free encyclopedia",
+   "link": "http://en.wikipedia.org/wiki/Presidency_of_Barack_Obama",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "The Presidency of Barack Obama began at noon EST on January 20, 2009, \nwhen he became the 44th President of the United States. Obama was a United ...",
+   "htmlSnippet": "The Presidency of Barack \u003cb\u003eObama\u003c/b\u003e began at noon EST on January 20, 2009, \u003cbr\u003e\nwhen he became the 44th President of the United States. \u003cb\u003eObama\u003c/b\u003e was a United&nbsp;...",
+   "cacheId": "cCO0YNzBcLwJ",
+   "formattedUrl": "en.wikipedia.org/wiki/Presidency_of_Barack_Obama",
+   "htmlFormattedUrl": "en.wikipedia.org/wiki/Presidency_of_Barack_\u003cb\u003eObama\u003c/b\u003e",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/220px-President_Barack_Obama.jpg",
+      "type": "1",
+      "width": "176",
+      "height": "220"
+     }
+    ],
+    "hcard": [
+     {
+      "fn": "Barack Obama",
+      "nickname": "Barack Hussein Obama II[1]",
+      "bday": "1961-08-04",
+      "label": "The White House"
+     },
+     {
+      "fn": "Barack Obama"
+     }
+    ]
+   },
+   "labels": [
+    {
+     "name": "encyclopedie",
+     "displayName": "encyclopedie",
+     "label_with_op": "more:encyclopedie"
+    }
+   ]
+  }
+ ]
+}

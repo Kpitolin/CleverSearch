@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:j.0="http://dbpedia.org/resource/" xmlns:j.1="http://dbpedia.org/resource/"> 
+<rdf:Description rdf:about=".">
+<j.0:Biography rdf:resource="http://dbpedia.org/resource/Biography"/>
+<j.0:Quotation rdf:resource="http://dbpedia.org/resource/Quotation"/>
+<j.0:Video rdf:resource="http://dbpedia.org/resource/Video"/>
+<j.0:Photograph rdf:resource="http://dbpedia.org/resource/Photograph"/>
+<j.0:Barack_Obama rdf:resource="http://dbpedia.org/resource/Barack_Obama"/>
+<j.0:News_Corporation rdf:resource="http://dbpedia.org/resource/News_Corporation"/>
+</rdf:Description>
+</rdf:RDF>
