@@ -194,10 +194,16 @@ public class compareRDF {
 
 	private static double calculerIndiceJaccard(String inputFileName1,
 			String inputFileName2) {
-		double indice = compterNombreRelationsApresIntersection(inputFileName1,
-				inputFileName2)
-				/ compterNombreRelationsApresUnion(inputFileName1,
-						inputFileName2);
+		
+		double indice = 0;
+		if (compterNombreRelationsApresIntersection(inputFileName1,
+				inputFileName2)!=0 && compterNombreRelationsApresUnion(inputFileName1,
+						inputFileName2)!=0){
+			indice = compterNombreRelationsApresIntersection(inputFileName1,
+					inputFileName2)
+					/ compterNombreRelationsApresUnion(inputFileName1,
+							inputFileName2);
+		}
 		return indice;
 	}
 
@@ -230,7 +236,26 @@ public class compareRDF {
 									+ '"' + " xmlns:j.0=" + '"'
 									+ "http://dbpedia.org/resource/" + '"'
 									+ " xmlns:j.1=" + '"'
-									+ "http://dbpedia.org/resource/" + '"' + "> \n");
+									+ "http://dbpedia.org/resource/" + '"' 
+									+ " xmlns:j.2=" + '"'
+									+ "http://dbpedia.org/resource/" + '"' 
+									+ " xmlns:j.3=" + '"'
+									+ "http://dbpedia.org/resource/" + '"' 
+									+ " xmlns:j.4=" + '"'
+									+ "http://dbpedia.org/resource/" + '"' 
+									+ " xmlns:j.5=" + '"'
+									+ "http://dbpedia.org/resource/" + '"' 
+									+ " xmlns:j.6=" + '"'
+									+ "http://dbpedia.org/resource/" + '"' 
+									+ " xmlns:j.7=" + '"'
+									+ "http://dbpedia.org/resource/" + '"' 
+									+ " xmlns:j.8=" + '"'
+									+ "http://dbpedia.org/resource/" + '"' 
+									+ " xmlns:j.9=" + '"'
+									+ "http://dbpedia.org/resource/" + '"' 
+									+ " xmlns:j.10=" + '"'
+									+ "http://dbpedia.org/resource/" + '"' 
+									+ "> \n");
 							writer.write("<rdf:Description rdf:about=" + '"' + "."
 									+ '"' + ">\n");
 							// creation d'un constructeur de documents a l'aide d'une
@@ -311,7 +336,7 @@ public class compareRDF {
 			csvSupp.delete();
 		}
 
-		modifierFichierXML(pathname);
+		//modifierFichierXML(pathname);
 
 		String[] listeFichiers = listerRepertoire(pathname);
 

@@ -77,7 +77,7 @@ public class CreationGraphe {
 
 					JSONObject value = (JSONObject) array.get(j);
 					String uri = (String) value.get("value");
-					if (isGoodUrl( uri) && !uri.contains(" ") && !uri.equals("") && !uri.contains("%") && uri!=null){
+					if (/*isGoodUrl( uri) &&*/ !uri.contains(" ") && !uri.equals("") && !uri.contains("%") && uri!=null){
 						keywordAndValues.add(uri);
 					}
 					//System.out.println("value = " + uri);
@@ -101,11 +101,11 @@ public class CreationGraphe {
 		Resource res2 = null;
 		Property P2 = null;
 		Property P = null;
-
+		ArrayList<Resource> linkedResources = new ArrayList<Resource>();
 		for (int i = 0; i < arrayOfWords.size(); i++) {
 
 
-			for(int j=0; j<arrayOfWords.get(i).size(); j++){
+			for(int j=0; j<1/*arrayOfWords.get(i).size()*/; j++){
 				if(!arrayOfWords.get(i).get(j).contains("%")){
 					if(j == 0 &&  arrayOfWords.get(i).get(j)!=null){
 						// is a list
@@ -121,13 +121,17 @@ public class CreationGraphe {
 
 						res2 = m.createResource(""+arrayOfWords.get(i).get(j));
 						res.addProperty(P2, res2);
+						linkedResources.add(res2);
 					}
 				}
 
 
 			}
 
-			r.addProperty(P, res);
+			if(!linkedResources.isEmpty()){
+				r.addProperty(P, res);
+
+			}
 
 
 		}
@@ -144,7 +148,7 @@ public class CreationGraphe {
 		// writer.setErrorHandler(myErrorHandler);
 		writer.setProperty("showXmlDeclaration", "true");
 		writer.setProperty("tab", "8");
-		writer.setProperty("relativeURIs", "same-document,relative");
+		//writer.setProperty("relativeURIs", "same-document,relative");
 		OutputStream outStream = new FileOutputStream("."+separator+"extendedGraph"+separator+"foo_" + Service.increment
 				+ ".xml");
 		writer.write(m, outStream, "RDF/XML");
@@ -152,25 +156,7 @@ public class CreationGraphe {
 
 	}
 
-	//	public void createGraph(String filePath, String rootUrl) {
-	//		ArrayList<String> arrayOfWords = new ArrayList<String>();
-	//		try {
-	//			extractText(filePath, arrayOfWords);
-	//		} catch (FileNotFoundException e1) {
-	//			// TODO Auto-generated catch block
-	//			e1.printStackTrace();
-	//		}
-	//		// Model creation
-	//		BasicConfigurator.configure(); // necessary
-	//		Model m = modelCreation(arrayOfWords, rootUrl);
-	//
-	//		try {
-	//			writeInFile(m);
-	//
-	//		} catch (IOException e) {
-	//			e.printStackTrace();
-	//		}
-	//	}
+
 
 	public static void main(String[] args) throws IOException {
 
