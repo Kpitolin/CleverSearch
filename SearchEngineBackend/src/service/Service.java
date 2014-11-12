@@ -90,7 +90,7 @@ public class Service {
 
 		JSONObject jsonResult = annotateAndExtendResults(inputSearchResults,
 				jsonParser);
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 9; i++) {
 			ArrayList<ArrayList<String>> myArray = creator.extractFromJSON(
 					jsonResult, i);
 			BasicConfigurator.configure(); // necessary
@@ -99,7 +99,6 @@ public class Service {
 			
 			try {
 				creator.writeInFile(m);
-
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

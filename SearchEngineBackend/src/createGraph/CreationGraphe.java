@@ -35,12 +35,19 @@ public class CreationGraphe {
 	public final static String macSeparator = "/";
 	public final static String windowsSeparator = "\\";
 	public final static String separator = macSeparator;
+	public final static String regex = "\\b(https?|ftp|file)://[-a-zA-Z0-9+&@#/%=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
 
-	public boolean isGoodUrl(String url) { 
-		Pattern p = Pattern.compile("^[wW]{3}\\.[^\\.]+\\.\\p{Alpha}{1,4}/*.*$"); 
-		Matcher m = p.matcher(url); 
-		return m.matches(); 
+	
+	private boolean isGoodUrl(String s) {
+        try {
+            Pattern patt = Pattern.compile(regex);
+            Matcher matcher = patt.matcher(s);
+            return matcher.matches();
+        } catch (RuntimeException e) {
+        return false;
+    }      
 	}
+   
 	public void extractText(String filePath, ArrayList<String> arrayOfWords)
 			throws FileNotFoundException {
 		// Recuperation fichier txt
@@ -77,7 +84,7 @@ public class CreationGraphe {
 
 					JSONObject value = (JSONObject) array.get(j);
 					String uri = (String) value.get("value");
-					if (/*isGoodUrl( uri) &&*/ !uri.contains(" ") && !uri.equals("") && !uri.contains("%") && uri!=null){
+					if (isGoodUrl( uri) && !uri.contains(" ") && !uri.equals("") && !uri.contains("%") && uri!=null){
 						keywordAndValues.add(uri);
 					}
 					//System.out.println("value = " + uri);
@@ -105,7 +112,7 @@ public class CreationGraphe {
 		for (int i = 0; i < arrayOfWords.size(); i++) {
 
 
-			for(int j=0; j<1/*arrayOfWords.get(i).size()*/; j++){
+			for(int j=0; j<arrayOfWords.get(i).size(); j++){
 				if(!arrayOfWords.get(i).get(j).contains("%")){
 					if(j == 0 &&  arrayOfWords.get(i).get(j)!=null){
 						// is a list
@@ -145,10 +152,9 @@ public class CreationGraphe {
 	public void writeInFile(Model m) throws IOException {
 		// now write the model in XML form to a file
 		RDFWriter writer = m.getWriter();
-		// writer.setErrorHandler(myErrorHandler);
 		writer.setProperty("showXmlDeclaration", "true");
 		writer.setProperty("tab", "8");
-		//writer.setProperty("relativeURIs", "same-document,relative");
+		writer.setProperty("relativeURIs", "same-document,relative");
 		OutputStream outStream = new FileOutputStream("."+separator+"extendedGraph"+separator+"foo_" + Service.increment
 				+ ".xml");
 		writer.write(m, outStream, "RDF/XML");
