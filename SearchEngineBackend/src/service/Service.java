@@ -36,50 +36,59 @@ public class Service {
 	public ArrayList<AnalyseResults> launchSearch(String query, String label)
 			throws IOException {
 		
-		GoogleSearch search = new GoogleSearch();
-		//String jsonGenere = search.search(query, label);
-		String jsonGenere = "searchResults.json";
-		DBpediaSpotlightClient annotation = new DBpediaSpotlightClient();
-		CreationGraphe creator = new CreationGraphe();
-
-		ArrayList<SearchData> searchDatas = new ArrayList<SearchData>();
-
-		try {
-			searchDatas = annotateAndCreateGraph(jsonGenere, annotation,
-					creator);
-		} catch (Exception e) {
-			System.out
-					.println("probleme d'annotation ou de creation des graphes rdf");
-		}
-
-		compareRDF compare = new compareRDF();
-		compare.creerMatriceSimilarite("." + separator + "extendedGraph");
-
+		// GoogleSearch search = new GoogleSearch();
+		// //String jsonGenere = search.search(query, label);
+		// String jsonGenere = "searchResults.json";
+		// DBpediaSpotlightClient annotation = new DBpediaSpotlightClient();
+		// CreationGraphe creator = new CreationGraphe();
+		//
+		// ArrayList<SearchData> searchDatas = new ArrayList<SearchData>();
+		//
+		// try {
+		// searchDatas = annotateAndCreateGraph(jsonGenere, annotation,
+		// creator);
+		// } catch (Exception e) {
+		// System.out
+		// .println("probleme d'annotation ou de creation des graphes rdf");
+		// }
+		//
+		// compareRDF compare = new compareRDF();
+		// compare.creerMatriceSimilarite("." + separator + "extendedGraph");
+		//
+		// ExplorationMatrice explorer = new ExplorationMatrice();
+		// org.json.simple.JSONObject jsonObj1 =
+		// explorer.exploreSimiliratyFromCSV("extendedGraph"
+		// + separator + "matriceSimilarite.csv", 0, 0.02,searchDatas);
+		//
+		//
+		//
+		// org.json.simple.JSONObject jsonObj2 =
+		// explorer.exploreSimiliratyFromCSV("extendedGraph"
+		// + separator + "matriceSimilarite.csv", 0.02,0.1,searchDatas);
+		//
+		// org.json.simple.JSONObject jsonObj3 =
+		// explorer.exploreSimiliratyFromCSV("extendedGraph"
+		// + separator + "matriceSimilarite.csv", 0.1,0.2,searchDatas);
+		//
+		//
+		// System.out.println(searchDatas.size());
+		// AnalyseResults results1 = new AnalyseResults(searchDatas, jsonObj1);
+		// results1.getPagesResults().get(0);
+		// System.out.println(jsonObj1.toJSONString());
+		// System.out.println(jsonObj1.get(1));
+		//
+		// AnalyseResults results2 = new AnalyseResults(searchDatas, jsonObj2);
+		// AnalyseResults results3 = new AnalyseResults(searchDatas, jsonObj3);
+		//
+		// ArrayList<AnalyseResults> results = new ArrayList<AnalyseResults>();
+		//
+		// results.add(results1);
+		// results.add(results2);
+		// results.add(results3);
+		//
+		// return results;
 		ExplorationMatrice explorer = new ExplorationMatrice();
-		org.json.simple.JSONObject jsonObj1 = explorer.exploreSimiliratyFromCSV("extendedGraph"
-				+ separator + "matriceSimilarite.csv", 0, 0.02,searchDatas);
-		/*
-		org.json.simple.JSONObject jsonObj2 = explorer.exploreSimiliratyFromCSV("extendedGraph"
-				+ separator + "matriceSimilarite.csv", 0.02,0.1,searchDatas);
-
-		org.json.simple.JSONObject jsonObj3 = explorer.exploreSimiliratyFromCSV("extendedGraph"
-				+ separator + "matriceSimilarite.csv", 0.1,0.2,searchDatas);
-	*/
-
-		AnalyseResults results1 = new AnalyseResults(searchDatas, jsonObj1);
-		//System.out.println(jsonObj1.toJSONString());
-		
-		/*AnalyseResults results2 = new AnalyseResults(searchDatas, jsonObj2);
-		AnalyseResults results3 = new AnalyseResults(searchDatas, jsonObj3);
-		
-		ArrayList<AnalyseResults> results = new ArrayList<AnalyseResults>();
-		
-		results.add(results1);
-		results.add(results2);
-		results.add(results3);
-		
-		return results;
-		*/
+		explorer.creerMapSimilarite("extendedGraph" + separator + "matriceSimilarite.csv", 0.03);
 		return null;
 	}
 

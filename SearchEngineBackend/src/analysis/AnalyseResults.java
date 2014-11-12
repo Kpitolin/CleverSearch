@@ -18,4 +18,14 @@ public class AnalyseResults {
 		pagesResults= pR;
 		objJSON = obj;
 	}
+
+	public ArrayList<SearchData> getPagesResults() {
+		return pagesResults;
+	}
+
+	public JSONObject getObjJSON() {
+		return objJSON;
+	}
+	
+	
 }
