@@ -99,7 +99,7 @@ public class Service {
 
 		JSONObject jsonResult = annotateAndExtendResults(inputSearchResults,
 				jsonParser);
-		for (int i = 0; i < 9; i++) {
+		for (int i = 0; i < 2; i++) {
 			ArrayList<ArrayList<String>> myArray = creator.extractFromJSON(
 					jsonResult, i);
 			BasicConfigurator.configure(); // necessary
@@ -114,7 +114,9 @@ public class Service {
 			}
 			increment++;
 		}
-
+		
+	
+		
 		return jsonParser.searchResults.searchDatas;
 	}
 	/*
