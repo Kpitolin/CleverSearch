@@ -8,7 +8,6 @@ public class SearchResults {
 	public ArrayList<SearchData> searchDatas;
 	
 	public SearchResults(){
-	
 		searchQuery = "";
 		searchDatas = new ArrayList<SearchData>();
 	}
