@@ -23,8 +23,8 @@ public class ExplorationMatrice {
 
 	@SuppressWarnings("unchecked")
 	public JSONObject exploreSimiliratyFromCSV(String pathnameCSV,
-			double seuilJaccardInf, double seuilJaccardSup,
-			ArrayList<SearchData> searchDatas) throws IOException {
+			double seuilJaccardInf, ArrayList<SearchData> searchDatas)
+			throws IOException {
 
 		File file = new File(pathnameCSV);
 		FileReader fr = new FileReader(file);
@@ -88,8 +88,7 @@ public class ExplorationMatrice {
 				@SuppressWarnings("unused")
 				String noeud2 = firstLine[i];
 
-				if (indiceJaccard >= seuilJaccardInf
-						&& indiceJaccard < seuilJaccardSup) {
+				if (indiceJaccard >= seuilJaccardInf) {
 					JSONObject aLink = new JSONObject();
 
 					int indexNoeud1 = data.indexOf(oneData) - 1;
@@ -121,9 +120,11 @@ public class ExplorationMatrice {
 		return objJSON;
 	}
 
-	public Map<String, List<String>> creerMapSimilarite(String pathnameCSV,
-			Double seuilMinimal) throws IOException {
-		Map<String, List<String>> mapSimilarite = new LinkedHashMap<String, List<String>>();
+	public Map<SearchData, List<SearchData>> creerMapSimilarite(
+			String pathnameCSV, Double seuilMinimal,
+			ArrayList<SearchData> searchDatas) throws IOException {
+
+		Map<SearchData, List<SearchData>> mapSimilarite = new LinkedHashMap<SearchData, List<SearchData>>();
 
 		File file = new File(pathnameCSV);
 		FileReader fr = new FileReader(file);
@@ -132,77 +133,82 @@ public class ExplorationMatrice {
 		String[] nextLine = null;
 		String[] firstLine = null;
 		firstLine = csvReader.readNext();
+
 		// On initialise toutes les cles possibles
-		List<String> cleMap = new ArrayList<String>();
-		for (int i = 0; i < firstLine.length; i++) {
+		List<SearchData> cleMap = new ArrayList<SearchData>();
+		for (int i = 0; i < firstLine.length - 1; i++) {
 			if (!firstLine[i].equals("#")) {
-				cleMap.add(firstLine[i]);
+				cleMap.add(searchDatas.get(i));
 			}
 		}
 
 		int j = 0;
 		while ((nextLine = csvReader.readNext()) != null) {
 			List<String> seuilEtPagesRetenues = new ArrayList<String>();
-			List<String> pagesRetenuesTrie = new ArrayList<String>();
+			ArrayList<SearchData> pagesRetenuesTrie = new ArrayList<SearchData>();
 
-			for (int i = 1; i < nextLine.length; i++) {
+			// Recuperation des seuil + indice en fonction du seuil
+			for (int i = 1; i < nextLine.length - 1; i++) {
 				if (!(1.0 == Double.parseDouble(nextLine[i].replace(",", ".")))) {
 					Double seuil = Double.parseDouble(nextLine[i].replace(",",
 							"."));
 					if (seuil > seuilMinimal) {
-						seuilEtPagesRetenues.add(seuil + ";" + firstLine[i]);
+						seuilEtPagesRetenues.add(seuil + ";" + i);
 					}
 				}
 			}
 			// Tri le tableau
 			Collections.sort(seuilEtPagesRetenues, Collections.reverseOrder());
 
+			// Remplissage du tableau avec les searchDatas à partir de l'indice
 			for (int i = 0; i < seuilEtPagesRetenues.size(); i++) {
-				pagesRetenuesTrie
-						.add(seuilEtPagesRetenues.get(i).split(";")[1]);
+				pagesRetenuesTrie.add(searchDatas.get(Integer
+						.parseInt(seuilEtPagesRetenues.get(i).split(";")[1])));
 			}
 
+			// Remplissage de la map
 			mapSimilarite.put(cleMap.get(j), pagesRetenuesTrie);
 			j++;
 		}
+		csvReader.close();
 
-		Map<String, List<String>> mapSimilariteBis = new LinkedHashMap<String, List<String>>(
+		Map<SearchData, List<SearchData>> mapSimilariteBis = new LinkedHashMap<SearchData, List<SearchData>>(
 				mapSimilarite);
 
 		// Suppression des doublons
 		int item = 0;
-		Set<String> cles = mapSimilarite.keySet();
-		Iterator<String> it = cles.iterator();
-		List<String> removedKey = new ArrayList<String>();
+		Set<SearchData> cles = mapSimilarite.keySet();
+		Iterator<SearchData> it = cles.iterator();
+		List<SearchData> removedKey = new ArrayList<SearchData>();
 		while (it.hasNext()) {
-			String cle = (String) it.next();
+			SearchData cle = (SearchData) it.next();
 			if (!removedKey.contains(cle)) {
-				List<String> similaires = (List<String>) mapSimilarite.get(cle);
+				List<SearchData> similaires = (List<SearchData>) mapSimilarite
+						.get(cle);
 				item++;
 				for (int i = 0; i < similaires.size(); i++) {
 					item++;
 					if (mapSimilarite.containsKey(similaires.get(i))
 							&& item <= j) {
 						removedKey.add(similaires.get(i));
-						// System.out
-						// .println("Suppression des instances où la clé est "
-						// + similaires.get(i));
 						mapSimilariteBis.remove(similaires.get(i));
 					}
 				}
 			}
 		}
 
-//		Set<String> clesBis = mapSimilariteBis.keySet();
-//		Iterator<String> itBis = clesBis.iterator();
-//		while (itBis.hasNext()) {
-//			String cle = (String) itBis.next();
-//			List<String> similaires = (List<String>) mapSimilarite.get(cle);
-//			System.out.println(cle);
-//			for (int i = 0; i < similaires.size(); i++) {
-//				System.out.println("	>> " + similaires.get(i));
-//			}
-//		}
+		// Affichage de la map
+		Set<SearchData> clesBis = mapSimilariteBis.keySet();
+		Iterator<SearchData> itBis = clesBis.iterator();
+		while (itBis.hasNext()) {
+			SearchData cle = (SearchData) itBis.next();
+			List<SearchData> similaires = (List<SearchData>) mapSimilariteBis
+					.get(cle);
+			System.out.println(cle.title);
+			for (int i = 0; i < similaires.size(); i++) {
+				System.out.println("	>> " + similaires.get(i).title);
+			}
+		}
 		return mapSimilariteBis;
 	}
 };

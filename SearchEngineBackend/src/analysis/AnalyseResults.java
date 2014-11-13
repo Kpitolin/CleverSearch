@@ -1,31 +1,19 @@
 package analysis;
 
-import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 import org.json.simple.JSONObject;
 
 import annotation.SearchData;
 
 public class AnalyseResults {
-	public ArrayList<SearchData> pagesResults;
-	public JSONObject objJSON ;
+	public Map<SearchData, List<SearchData>> pagesResults;
+	public JSONObject objJSON;
 	
-	public AnalyseResults(){
-		pagesResults= new ArrayList<SearchData>();
-	}
-	
-	public AnalyseResults(ArrayList<SearchData> pR, JSONObject obj){
-		pagesResults= pR;
-		objJSON = obj;
-	}
-
-	public ArrayList<SearchData> getPagesResults() {
-		return pagesResults;
-	}
-
-	public JSONObject getObjJSON() {
-		return objJSON;
-	}
-	
-	
+	public AnalyseResults(Map<SearchData, List<SearchData>> pagesResults,
+			JSONObject objJSON) {
+		this.pagesResults = pagesResults;
+		this.objJSON = objJSON;
+	}	
 }
