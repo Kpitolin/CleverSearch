@@ -27,6 +27,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.util.LinkedList;
 import java.util.List;
@@ -254,7 +255,7 @@ public class DBpediaSpotlightClient extends AnnotationClient {
 			    String line;
 			    while ((line = reader.readLine()) != null && !line.equals(""))
 			    {
-				     String tmp = c.extractFromSparqlQuery(line);
+				     String tmp = c.extractFromSparqlQuery(URLDecoder.decode(line, "UTF-8"));
 				     JSONObject obj = c.parseJsonResource(line,tmp);
 				     outputArray.put(obj);
 			    }

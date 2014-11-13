@@ -35,12 +35,19 @@ public class CreationGraphe {
 	public final static String macSeparator = "/";
 	public final static String windowsSeparator = "\\";
 	public final static String separator = macSeparator;
+	public final static String regex = "\\b(https?|ftp|file)://[-a-zA-Z0-9+&@#/%=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
 
-	public boolean isGoodUrl(String url) { 
-		Pattern p = Pattern.compile("^[wW]{3}\\.[^\\.]+\\.\\p{Alpha}{1,4}/*.*$"); 
-		Matcher m = p.matcher(url); 
-		return m.matches(); 
+	
+	private boolean isGoodUrl(String s) {
+        try {
+            Pattern patt = Pattern.compile(regex);
+            Matcher matcher = patt.matcher(s);
+            return matcher.matches();
+        } catch (RuntimeException e) {
+        return false;
+    }      
 	}
+   
 	public void extractText(String filePath, ArrayList<String> arrayOfWords)
 			throws FileNotFoundException {
 		// Recuperation fichier txt
@@ -101,7 +108,7 @@ public class CreationGraphe {
 		Resource res2 = null;
 		Property P2 = null;
 		Property P = null;
-
+		ArrayList<Resource> linkedResources = new ArrayList<Resource>();
 		for (int i = 0; i < arrayOfWords.size(); i++) {
 
 
@@ -121,13 +128,17 @@ public class CreationGraphe {
 
 						res2 = m.createResource(""+arrayOfWords.get(i).get(j));
 						res.addProperty(P2, res2);
+						linkedResources.add(res2);
 					}
 				}
 
 
 			}
 
-			r.addProperty(P, res);
+			if(!linkedResources.isEmpty()){
+				r.addProperty(P, res);
+
+			}
 
 
 		}
@@ -141,7 +152,6 @@ public class CreationGraphe {
 	public void writeInFile(Model m) throws IOException {
 		// now write the model in XML form to a file
 		RDFWriter writer = m.getWriter();
-		// writer.setErrorHandler(myErrorHandler);
 		writer.setProperty("showXmlDeclaration", "true");
 		writer.setProperty("tab", "8");
 		writer.setProperty("relativeURIs", "same-document,relative");
@@ -152,25 +162,7 @@ public class CreationGraphe {
 
 	}
 
-	//	public void createGraph(String filePath, String rootUrl) {
-	//		ArrayList<String> arrayOfWords = new ArrayList<String>();
-	//		try {
-	//			extractText(filePath, arrayOfWords);
-	//		} catch (FileNotFoundException e1) {
-	//			// TODO Auto-generated catch block
-	//			e1.printStackTrace();
-	//		}
-	//		// Model creation
-	//		BasicConfigurator.configure(); // necessary
-	//		Model m = modelCreation(arrayOfWords, rootUrl);
-	//
-	//		try {
-	//			writeInFile(m);
-	//
-	//		} catch (IOException e) {
-	//			e.printStackTrace();
-	//		}
-	//	}
+
 
 	public static void main(String[] args) throws IOException {
 
