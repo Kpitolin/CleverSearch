@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://id.dbpedia.org/resource/"
+    xmlns:j.1="http://fr.dbpedia.org/resource/"
+    xmlns:j.2="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:j.3="http://dbpedia.org/ontology/"
+    xmlns:j.4="http://dbpedia.org/class/yago/"
+    xmlns:j.5="http://schema.org/"
+    xmlns:j.6="http://dbpedia.org/resource/"
+    xmlns:j.7="http://de.dbpedia.org/resource/"
+    xmlns:j.8="http://it.dbpedia.org/resource/"
+    xmlns:j.9="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+    xmlns:j.10="http://dbpedia.org/ontology/Wikidata:"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.11="http://wikidata.dbpedia.org/resource/"
+    xmlns:j.12="http://es.dbpedia.org/resource/"
+    xmlns:j.13="http://cs.dbpedia.org/resource/"
+    xmlns:j.14="http://wikidata.org/entity/"
+    xmlns:j.15="http://www.ontologydesignpatterns.org/ont/d0.owl#"
+    xmlns:j.16="http://umbel.org/umbel/rc/"
+    xmlns:j.17="http://nl.dbpedia.org/resource/"
+    xmlns:j.18="http://rdf.freebase.com/ns/"
+    xmlns:j.19="http://xmlns.com/foaf/0.1/" > 
+        <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Barack_Obama">
+                <j.6:California_Democratic_Party rdf:resource="http://dbpedia.org/resource/California_Democratic_Party"/>
+                <j.6:Marching_band rdf:resource="http://dbpedia.org/resource/Marching_band"/>
+                <j.6:United_States_Senate rdf:resource="http://dbpedia.org/resource/United_States_Senate"/>
+                <j.6:Illinois rdf:resource="http://dbpedia.org/resource/Illinois"/>
+                <j.6:Illmatic rdf:resource="http://dbpedia.org/resource/Illmatic"/>
+                <j.6:Military_campaign rdf:resource="http://dbpedia.org/resource/Military_campaign"/>
+                <j.6:Attention rdf:resource="http://dbpedia.org/resource/Attention"/>
+                <j.6:National_security rdf:resource="http://dbpedia.org/resource/National_security"/>
+                <j.6:Barack_Obama rdf:resource="http://dbpedia.org/resource/Barack_Obama"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Military_campaign">
+                <j.17:Veldtocht rdf:resource="http://nl.dbpedia.org/resource/Veldtocht"/>
+                <j.0:Kampanye_militer rdf:resource="http://id.dbpedia.org/resource/Kampanye_militer"/>
+                <j.11:Q831663 rdf:resource="http://wikidata.dbpedia.org/resource/Q831663"/>
+                <j.7:Feldzug rdf:resource="http://de.dbpedia.org/resource/Feldzug"/>
+                <j.1:Campagne_militaire rdf:resource="http://fr.dbpedia.org/resource/Campagne_militaire"/>
+                <j.18:m.05ww_l rdf:resource="http://rdf.freebase.com/ns/m.05ww_l"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/National_security">
+                <j.14:Q258307 rdf:resource="http://wikidata.org/entity/Q258307"/>
+                <j.0:Keamanan_nasional rdf:resource="http://id.dbpedia.org/resource/Keamanan_nasional"/>
+                <j.12:Seguridad_nacional rdf:resource="http://es.dbpedia.org/resource/Seguridad_nacional"/>
+                <j.11:Q258307 rdf:resource="http://wikidata.dbpedia.org/resource/Q258307"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Attention">
+                <j.8:Attenzione rdf:resource="http://it.dbpedia.org/resource/Attenzione"/>
+                <j.0:Atensi rdf:resource="http://id.dbpedia.org/resource/Atensi"/>
+                <j.13:Pozornost rdf:resource="http://cs.dbpedia.org/resource/Pozornost"/>
+                <j.11:Q6501338 rdf:resource="http://wikidata.dbpedia.org/resource/Q6501338"/>
+                <j.7:Aufmerksamkeit rdf:resource="http://de.dbpedia.org/resource/Aufmerksamkeit"/>
+                <j.1:Attention rdf:resource="http://fr.dbpedia.org/resource/Attention"/>
+                <j.18:m.0hy_j rdf:resource="http://rdf.freebase.com/ns/m.0hy_j"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/California_Democratic_Party">
+                <j.5:Organization rdf:resource="http://schema.org/Organization"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <j.4:Group100031264 rdf:resource="http://dbpedia.org/class/yago/Group100031264"/>
+                <j.3:Organisation rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+                <j.9:SocialPerson rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson"/>
+                <j.3:Agent rdf:resource="http://dbpedia.org/ontology/Agent"/>
+                <j.3:PoliticalParty rdf:resource="http://dbpedia.org/ontology/PoliticalParty"/>
+                <j.4:Abstraction100002137 rdf:resource="http://dbpedia.org/class/yago/Abstraction100002137"/>
+                <j.9:Agent rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                <j.4:Organization108008335 rdf:resource="http://dbpedia.org/class/yago/Organization108008335"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Barack_Obama">
+                <j.5:Person rdf:resource="http://schema.org/Person"/>
+                <j.4:UnitedStatesSenatorsFromIllinois rdf:resource="http://dbpedia.org/class/yago/UnitedStatesSenatorsFromIllinois"/>
+                <j.11:Q215627 rdf:resource="http://wikidata.dbpedia.org/resource/Q215627"/>
+                <j.3:Agent rdf:resource="http://dbpedia.org/ontology/Agent"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <j.19:Person rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <j.11:Q5 rdf:resource="http://wikidata.dbpedia.org/resource/Q5"/>
+                <j.9:NaturalPerson rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
+                <j.9:Agent rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                <j.3:OfficeHolder rdf:resource="http://dbpedia.org/ontology/OfficeHolder"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Marching_band">
+                <j.8:Marching_band rdf:resource="http://it.dbpedia.org/resource/Marching_band"/>
+                <j.11:Q1426710 rdf:resource="http://wikidata.dbpedia.org/resource/Q1426710"/>
+                <j.9:Concept rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+                <j.3:TopicalConcept rdf:resource="http://dbpedia.org/ontology/TopicalConcept"/>
+                <j.7:Marching_Band rdf:resource="http://de.dbpedia.org/resource/Marching_Band"/>
+                <j.0:Orkes_barisan rdf:resource="http://id.dbpedia.org/resource/Orkes_barisan"/>
+                <j.3:Genre rdf:resource="http://dbpedia.org/ontology/Genre"/>
+                <j.12:Banda_de_marcha rdf:resource="http://es.dbpedia.org/resource/Banda_de_marcha"/>
+                <j.18:m.09x9g rdf:resource="http://rdf.freebase.com/ns/m.09x9g"/>
+                <j.3:MusicGenre rdf:resource="http://dbpedia.org/ontology/MusicGenre"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Illmatic">
+                <j.11:Q482994 rdf:resource="http://wikidata.dbpedia.org/resource/Q482994"/>
+                <j.16:MusicalComposition rdf:resource="http://umbel.org/umbel/rc/MusicalComposition"/>
+                <j.5:CreativeWork rdf:resource="http://schema.org/CreativeWork"/>
+                <j.3:MusicalWork rdf:resource="http://dbpedia.org/ontology/MusicalWork"/>
+                <j.5:MusicAlbum rdf:resource="http://schema.org/MusicAlbum"/>
+                <j.16:Album_IBO rdf:resource="http://umbel.org/umbel/rc/Album_IBO"/>
+                <j.3:Album rdf:resource="http://dbpedia.org/ontology/Album"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <j.3:Work rdf:resource="http://dbpedia.org/ontology/Work"/>
+                <j.9:InformationEntity rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Illinois">
+                <j.15:Location rdf:resource="http://www.ontologydesignpatterns.org/ont/d0.owl#Location"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <j.3:Region rdf:resource="http://dbpedia.org/ontology/Region"/>
+                <j.3:Place rdf:resource="http://dbpedia.org/ontology/Place"/>
+                <j.3:PopulatedPlace rdf:resource="http://dbpedia.org/ontology/PopulatedPlace"/>
+                <j.2:SpatialThing rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+                <j.10:Q532 rdf:resource="http://dbpedia.org/ontology/Wikidata:Q532"/>
+                <j.5:AdministrativeArea rdf:resource="http://schema.org/AdministrativeArea"/>
+                <j.5:Place rdf:resource="http://schema.org/Place"/>
+                <j.3:AdministrativeRegion rdf:resource="http://dbpedia.org/ontology/AdministrativeRegion"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/United_States_Senate">
+                <j.2:SpatialThing rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <j.16:Organization rdf:resource="http://umbel.org/umbel/rc/Organization"/>
+                <j.9:Agent rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                <j.9:SocialPerson rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson"/>
+                <j.3:Organisation rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+                <j.3:Legislature rdf:resource="http://dbpedia.org/ontology/Legislature"/>
+                <j.3:Agent rdf:resource="http://dbpedia.org/ontology/Agent"/>
+                <j.16:GovernmentalOrganization rdf:resource="http://umbel.org/umbel/rc/GovernmentalOrganization"/>
+                <j.5:Organization rdf:resource="http://schema.org/Organization"/>
+        </rdf:Description>
+</rdf:RDF>

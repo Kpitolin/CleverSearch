@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.opengis.net/gml/"
+    xmlns:j.1="http://id.dbpedia.org/resource/"
+    xmlns:j.2="http://fr.dbpedia.org/resource/"
+    xmlns:j.3="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:j.4="http://dbpedia.org/ontology/"
+    xmlns:j.5="http://dbpedia.org/class/yago/"
+    xmlns:j.6="http://schema.org/"
+    xmlns:j.7="http://dbpedia.org/resource/"
+    xmlns:j.8="http://de.dbpedia.org/resource/"
+    xmlns:j.9="http://it.dbpedia.org/resource/"
+    xmlns:j.10="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+    xmlns:j.11="http://dbpedia.org/ontology/Wikidata:"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.12="http://es.dbpedia.org/resource/"
+    xmlns:j.13="http://wikidata.dbpedia.org/resource/"
+    xmlns:j.14="http://cs.dbpedia.org/resource/"
+    xmlns:j.15="http://www.ontologydesignpatterns.org/ont/d0.owl#"
+    xmlns:j.16="http://umbel.org/umbel/rc/"
+    xmlns:j.17="http://eu.dbpedia.org/resource/"
+    xmlns:j.18="http://rdf.freebase.com/ns/"
+    xmlns:j.19="http://xmlns.com/foaf/0.1/" > 
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Cardinal_direction">
+                <j.9:Punto_cardinale rdf:resource="http://it.dbpedia.org/resource/Punto_cardinale"/>
+                <j.1:Mata_angin rdf:resource="http://id.dbpedia.org/resource/Mata_angin"/>
+                <j.17:Puntu_kardinal rdf:resource="http://eu.dbpedia.org/resource/Puntu_kardinal"/>
+                <j.12:Punto_cardinal rdf:resource="http://es.dbpedia.org/resource/Punto_cardinal"/>
+                <j.13:Q23718 rdf:resource="http://wikidata.dbpedia.org/resource/Q23718"/>
+                <j.8:Himmelsrichtung rdf:resource="http://de.dbpedia.org/resource/Himmelsrichtung"/>
+                <j.2:Point_cardinal rdf:resource="http://fr.dbpedia.org/resource/Point_cardinal"/>
+                <j.18:m.01cf0p rdf:resource="http://rdf.freebase.com/ns/m.01cf0p"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Obama,_Fukui">
+                <j.7:Train rdf:resource="http://dbpedia.org/resource/Train"/>
+                <j.7:Kyoto_Prefecture rdf:resource="http://dbpedia.org/resource/Kyoto_Prefecture"/>
+                <j.7:Cardinal_direction rdf:resource="http://dbpedia.org/resource/Cardinal_direction"/>
+                <j.7:Bay rdf:resource="http://dbpedia.org/resource/Bay"/>
+                <j.7:Japan rdf:resource="http://dbpedia.org/resource/Japan"/>
+                <j.7:Fukui_Prefecture rdf:resource="http://dbpedia.org/resource/Fukui_Prefecture"/>
+                <j.7:Municipalities_of_Japan rdf:resource="http://dbpedia.org/resource/Municipalities_of_Japan"/>
+                <j.7:Shi_Le rdf:resource="http://dbpedia.org/resource/Shi_Le"/>
+                <j.7:Barack_Obama rdf:resource="http://dbpedia.org/resource/Barack_Obama"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Bay">
+                <j.9:Baia rdf:resource="http://it.dbpedia.org/resource/Baia"/>
+                <j.1:Teluk rdf:resource="http://id.dbpedia.org/resource/Teluk"/>
+                <j.17:Badia rdf:resource="http://eu.dbpedia.org/resource/Badia"/>
+                <j.13:Q39594 rdf:resource="http://wikidata.dbpedia.org/resource/Q39594"/>
+                <j.8:Bucht rdf:resource="http://de.dbpedia.org/resource/Bucht"/>
+                <j.18:m.04ggh49 rdf:resource="http://rdf.freebase.com/ns/m.04ggh49"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Municipalities_of_Japan">
+                <j.5:Region108630985 rdf:resource="http://dbpedia.org/class/yago/Region108630985"/>
+                <j.5:UrbanArea108675967 rdf:resource="http://dbpedia.org/class/yago/UrbanArea108675967"/>
+                <j.5:Location100027167 rdf:resource="http://dbpedia.org/class/yago/Location100027167"/>
+                <j.5:Third-levelAdministrativeCountrySubdivisions rdf:resource="http://dbpedia.org/class/yago/Third-levelAdministrativeCountrySubdivisions"/>
+                <j.5:Object100002684 rdf:resource="http://dbpedia.org/class/yago/Object100002684"/>
+                <j.5:AdministrativeDistrict108491826 rdf:resource="http://dbpedia.org/class/yago/AdministrativeDistrict108491826"/>
+                <j.5:District108552138 rdf:resource="http://dbpedia.org/class/yago/District108552138"/>
+                <j.5:YagoGeoEntity rdf:resource="http://dbpedia.org/class/yago/YagoGeoEntity"/>
+                <j.5:Subdivision108674251 rdf:resource="http://dbpedia.org/class/yago/Subdivision108674251"/>
+                <j.5:Tract108673395 rdf:resource="http://dbpedia.org/class/yago/Tract108673395"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Fukui_Prefecture">
+                <j.4:PopulatedPlace rdf:resource="http://dbpedia.org/ontology/PopulatedPlace"/>
+                <j.15:Location rdf:resource="http://www.ontologydesignpatterns.org/ont/d0.owl#Location"/>
+                <j.4:Place rdf:resource="http://dbpedia.org/ontology/Place"/>
+                <j.3:SpatialThing rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+                <j.6:Place rdf:resource="http://schema.org/Place"/>
+                <j.4:AdministrativeRegion rdf:resource="http://dbpedia.org/ontology/AdministrativeRegion"/>
+                <j.4:Region rdf:resource="http://dbpedia.org/ontology/Region"/>
+                <j.6:AdministrativeArea rdf:resource="http://schema.org/AdministrativeArea"/>
+                <j.11:Q532 rdf:resource="http://dbpedia.org/ontology/Wikidata:Q532"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Barack_Obama">
+                <j.6:Person rdf:resource="http://schema.org/Person"/>
+                <j.5:UnitedStatesSenatorsFromIllinois rdf:resource="http://dbpedia.org/class/yago/UnitedStatesSenatorsFromIllinois"/>
+                <j.13:Q215627 rdf:resource="http://wikidata.dbpedia.org/resource/Q215627"/>
+                <j.4:Agent rdf:resource="http://dbpedia.org/ontology/Agent"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <j.19:Person rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <j.13:Q5 rdf:resource="http://wikidata.dbpedia.org/resource/Q5"/>
+                <j.10:NaturalPerson rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
+                <j.10:Agent rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                <j.4:OfficeHolder rdf:resource="http://dbpedia.org/ontology/OfficeHolder"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Shi_Le">
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <j.10:NaturalPerson rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
+                <j.10:Agent rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                <j.13:Q5 rdf:resource="http://wikidata.dbpedia.org/resource/Q5"/>
+                <j.5:CausalAgent100007347 rdf:resource="http://dbpedia.org/class/yago/CausalAgent100007347"/>
+                <j.4:Person rdf:resource="http://dbpedia.org/ontology/Person"/>
+                <j.6:Person rdf:resource="http://schema.org/Person"/>
+                <j.13:Q215627 rdf:resource="http://wikidata.dbpedia.org/resource/Q215627"/>
+                <j.19:Person rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <j.4:Agent rdf:resource="http://dbpedia.org/ontology/Agent"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Train">
+                <j.9:Treno rdf:resource="http://it.dbpedia.org/resource/Treno"/>
+                <j.1:Kereta_api rdf:resource="http://id.dbpedia.org/resource/Kereta_api"/>
+                <j.17:Tren rdf:resource="http://eu.dbpedia.org/resource/Tren"/>
+                <j.12:Tren rdf:resource="http://es.dbpedia.org/resource/Tren"/>
+                <j.14:Vlak rdf:resource="http://cs.dbpedia.org/resource/Vlak"/>
+                <j.2:Train rdf:resource="http://fr.dbpedia.org/resource/Train"/>
+                <j.18:m.07jdr rdf:resource="http://rdf.freebase.com/ns/m.07jdr"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Kyoto_Prefecture">
+                <j.4:PopulatedPlace rdf:resource="http://dbpedia.org/ontology/PopulatedPlace"/>
+                <j.6:Place rdf:resource="http://schema.org/Place"/>
+                <j.4:Region rdf:resource="http://dbpedia.org/ontology/Region"/>
+                <j.15:Location rdf:resource="http://www.ontologydesignpatterns.org/ont/d0.owl#Location"/>
+                <j.6:AdministrativeArea rdf:resource="http://schema.org/AdministrativeArea"/>
+                <j.11:Q532 rdf:resource="http://dbpedia.org/ontology/Wikidata:Q532"/>
+                <j.4:Place rdf:resource="http://dbpedia.org/ontology/Place"/>
+                <j.0:_Feature rdf:resource="http://www.opengis.net/gml/_Feature"/>
+                <j.4:AdministrativeRegion rdf:resource="http://dbpedia.org/ontology/AdministrativeRegion"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Japan">
+                <j.4:Country rdf:resource="http://dbpedia.org/ontology/Country"/>
+                <j.4:Place rdf:resource="http://dbpedia.org/ontology/Place"/>
+                <j.0:_Feature rdf:resource="http://www.opengis.net/gml/_Feature"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <j.15:Location rdf:resource="http://www.ontologydesignpatterns.org/ont/d0.owl#Location"/>
+                <j.6:Country rdf:resource="http://schema.org/Country"/>
+                <j.4:PopulatedPlace rdf:resource="http://dbpedia.org/ontology/PopulatedPlace"/>
+                <j.16:Country rdf:resource="http://umbel.org/umbel/rc/Country"/>
+                <j.6:Place rdf:resource="http://schema.org/Place"/>
+                <j.11:Q532 rdf:resource="http://dbpedia.org/ontology/Wikidata:Q532"/>
+        </rdf:Description>
+</rdf:RDF>

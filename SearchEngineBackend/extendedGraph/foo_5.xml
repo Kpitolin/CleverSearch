@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://id.dbpedia.org/resource/"
+    xmlns:j.1="http://fr.dbpedia.org/resource/"
+    xmlns:j.2="http://dbpedia.org/ontology/"
+    xmlns:j.3="http://dbpedia.org/class/yago/"
+    xmlns:j.4="http://schema.org/"
+    xmlns:j.5="http://dbpedia.org/resource/"
+    xmlns:j.6="http://de.dbpedia.org/resource/"
+    xmlns:j.7="http://it.dbpedia.org/resource/"
+    xmlns:j.8="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.9="http://wikidata.dbpedia.org/resource/"
+    xmlns:j.10="http://es.dbpedia.org/resource/"
+    xmlns:j.11="http://cs.dbpedia.org/resource/"
+    xmlns:j.12="http://wikidata.org/entity/"
+    xmlns:j.13="http://nl.dbpedia.org/resource/"
+    xmlns:j.14="http://eu.dbpedia.org/resource/"
+    xmlns:j.15="http://rdf.freebase.com/ns/"
+    xmlns:j.16="http://xmlns.com/foaf/0.1/" > 
+        <rdf:Description rdf:about="http://www.washingtontimes.com/topics/michelle-obama/">
+                <j.5:Biography rdf:resource="http://dbpedia.org/resource/Biography"/>
+                <j.5:Quotation rdf:resource="http://dbpedia.org/resource/Quotation"/>
+                <j.5:Video rdf:resource="http://dbpedia.org/resource/Video"/>
+                <j.5:Photograph rdf:resource="http://dbpedia.org/resource/Photograph"/>
+                <j.5:Michelle_Obama rdf:resource="http://dbpedia.org/resource/Michelle_Obama"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Michelle_Obama">
+                <j.9:Q215627 rdf:resource="http://wikidata.dbpedia.org/resource/Q215627"/>
+                <j.8:Agent rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                <j.8:NaturalPerson rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <j.3:WomenInIllinoisPolitics rdf:resource="http://dbpedia.org/class/yago/WomenInIllinoisPolitics"/>
+                <j.2:Agent rdf:resource="http://dbpedia.org/ontology/Agent"/>
+                <j.4:Person rdf:resource="http://schema.org/Person"/>
+                <j.3:WhitneyM.YoungMagnetHighSchoolAlumni rdf:resource="http://dbpedia.org/class/yago/WhitneyM.YoungMagnetHighSchoolAlumni"/>
+                <j.16:Person rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <j.9:Q5 rdf:resource="http://wikidata.dbpedia.org/resource/Q5"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Video">
+                <j.7:Video rdf:resource="http://it.dbpedia.org/resource/Video"/>
+                <j.0:Video rdf:resource="http://id.dbpedia.org/resource/Video"/>
+                <j.14:Bideo rdf:resource="http://eu.dbpedia.org/resource/Bideo"/>
+                <j.11:Video rdf:resource="http://cs.dbpedia.org/resource/Video"/>
+                <j.9:Q34508 rdf:resource="http://wikidata.dbpedia.org/resource/Q34508"/>
+                <j.6:Videotechnik rdf:resource="http://de.dbpedia.org/resource/Videotechnik"/>
+                <j.15:m.07z4p rdf:resource="http://rdf.freebase.com/ns/m.07z4p"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Photograph">
+                <j.12:Q125191 rdf:resource="http://wikidata.org/entity/Q125191"/>
+                <j.13:Foto rdf:resource="http://nl.dbpedia.org/resource/Foto"/>
+                <j.0:Foto rdf:resource="http://id.dbpedia.org/resource/Foto"/>
+                <j.14:Argazki rdf:resource="http://eu.dbpedia.org/resource/Argazki"/>
+                <j.9:Q125191 rdf:resource="http://wikidata.dbpedia.org/resource/Q125191"/>
+                <j.15:m.068jd rdf:resource="http://rdf.freebase.com/ns/m.068jd"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Quotation">
+                <j.7:Citazione rdf:resource="http://it.dbpedia.org/resource/Citazione"/>
+                <j.0:Kutipan rdf:resource="http://id.dbpedia.org/resource/Kutipan"/>
+                <j.10:Cita rdf:resource="http://es.dbpedia.org/resource/Cita"/>
+                <j.9:Q206287 rdf:resource="http://wikidata.dbpedia.org/resource/Q206287"/>
+                <j.6:Zitat rdf:resource="http://de.dbpedia.org/resource/Zitat"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Biography">
+                <j.7:Biografia rdf:resource="http://it.dbpedia.org/resource/Biografia"/>
+                <j.0:Biografi rdf:resource="http://id.dbpedia.org/resource/Biografi"/>
+                <j.14:Biografia rdf:resource="http://eu.dbpedia.org/resource/Biografia"/>
+                <j.11:Biografie rdf:resource="http://cs.dbpedia.org/resource/Biografie"/>
+                <j.9:Q36279 rdf:resource="http://wikidata.dbpedia.org/resource/Q36279"/>
+                <j.1:Biographie rdf:resource="http://fr.dbpedia.org/resource/Biographie"/>
+                <j.6:Biografie rdf:resource="http://de.dbpedia.org/resource/Biografie"/>
+                <j.15:m.017fp rdf:resource="http://rdf.freebase.com/ns/m.017fp"/>
+        </rdf:Description>
+</rdf:RDF>

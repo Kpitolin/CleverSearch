@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://fr.dbpedia.org/resource/1"
+    xmlns:j.1="http://dbpedia.org/ontology/"
+    xmlns:j.2="http://dbpedia.org/class/yago/"
+    xmlns:j.3="http://de.dbpedia.org/resource/1."
+    xmlns:j.4="http://schema.org/"
+    xmlns:j.5="http://dbpedia.org/resource/"
+    xmlns:j.6="http://es.dbpedia.org/resource/1"
+    xmlns:j.7="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+    xmlns:j.8="http://id.dbpedia.org/resource/1"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.9="http://wikidata.dbpedia.org/resource/"
+    xmlns:j.10="http://eu.dbpedia.org/resource/"
+    xmlns:j.11="http://rdf.freebase.com/ns/"
+    xmlns:j.12="http://xmlns.com/foaf/0.1/" > 
+        <rdf:Description rdf:about="http://www.cnn.com/2012/12/26/us/barack-obama---fast-facts/">
+                <j.5:Barack_Obama rdf:resource="http://dbpedia.org/resource/Barack_Obama"/>
+                <j.5:September_1 rdf:resource="http://dbpedia.org/resource/September_1"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/September_1">
+                <j.8:_September rdf:resource="http://id.dbpedia.org/resource/1_September"/>
+                <j.10:Irailaren_1 rdf:resource="http://eu.dbpedia.org/resource/Irailaren_1"/>
+                <j.6:_de_septiembre rdf:resource="http://es.dbpedia.org/resource/1_de_septiembre"/>
+                <j.3:_September rdf:resource="http://de.dbpedia.org/resource/1._September"/>
+                <j.0:er_septembre rdf:resource="http://fr.dbpedia.org/resource/1er_septembre"/>
+                <j.11:m.06vl2 rdf:resource="http://rdf.freebase.com/ns/m.06vl2"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Barack_Obama">
+                <j.4:Person rdf:resource="http://schema.org/Person"/>
+                <j.2:UnitedStatesSenatorsFromIllinois rdf:resource="http://dbpedia.org/class/yago/UnitedStatesSenatorsFromIllinois"/>
+                <j.9:Q215627 rdf:resource="http://wikidata.dbpedia.org/resource/Q215627"/>
+                <j.1:Agent rdf:resource="http://dbpedia.org/ontology/Agent"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <j.12:Person rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <j.9:Q5 rdf:resource="http://wikidata.dbpedia.org/resource/Q5"/>
+                <j.7:NaturalPerson rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
+                <j.7:Agent rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                <j.1:OfficeHolder rdf:resource="http://dbpedia.org/ontology/OfficeHolder"/>
+        </rdf:Description>
+</rdf:RDF>

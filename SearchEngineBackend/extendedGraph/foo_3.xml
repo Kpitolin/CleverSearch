@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.opengis.net/gml/"
+    xmlns:j.1="http://id.dbpedia.org/resource/"
+    xmlns:j.2="http://fr.dbpedia.org/resource/"
+    xmlns:j.3="http://dbpedia.org/ontology/"
+    xmlns:j.4="http://dbpedia.org/class/yago/"
+    xmlns:j.5="http://schema.org/"
+    xmlns:j.6="http://dbpedia.org/resource/"
+    xmlns:j.7="http://de.dbpedia.org/resource/"
+    xmlns:j.8="http://it.dbpedia.org/resource/"
+    xmlns:j.9="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+    xmlns:j.10="http://dbpedia.org/ontology/Wikidata:"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.11="http://wikidata.dbpedia.org/resource/"
+    xmlns:j.12="http://es.dbpedia.org/resource/"
+    xmlns:j.13="http://cs.dbpedia.org/resource/"
+    xmlns:j.14="http://wikidata.org/entity/"
+    xmlns:j.15="http://www.ontologydesignpatterns.org/ont/d0.owl#"
+    xmlns:j.16="http://nl.dbpedia.org/resource/"
+    xmlns:j.17="http://umbel.org/umbel/rc/"
+    xmlns:j.18="http://eu.dbpedia.org/resource/"
+    xmlns:j.19="http://rdf.freebase.com/ns/" > 
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Candidate">
+                <j.14:Q618536 rdf:resource="http://wikidata.org/entity/Q618536"/>
+                <j.16:Verkiezingskandidaat rdf:resource="http://nl.dbpedia.org/resource/Verkiezingskandidaat"/>
+                <j.11:Q618536 rdf:resource="http://wikidata.dbpedia.org/resource/Q618536"/>
+                <j.7:Kandidat rdf:resource="http://de.dbpedia.org/resource/Kandidat"/>
+                <j.2:Candidat rdf:resource="http://fr.dbpedia.org/resource/Candidat"/>
+                <j.19:m.02wwvy rdf:resource="http://rdf.freebase.com/ns/m.02wwvy"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Array_data_structure">
+                <j.4:Cognition100023271 rdf:resource="http://dbpedia.org/class/yago/Cognition100023271"/>
+                <j.4:Abstraction100002137 rdf:resource="http://dbpedia.org/class/yago/Abstraction100002137"/>
+                <j.4:Arrangement107938773 rdf:resource="http://dbpedia.org/class/yago/Arrangement107938773"/>
+                <j.4:Structure105726345 rdf:resource="http://dbpedia.org/class/yago/Structure105726345"/>
+                <j.4:DataStructures rdf:resource="http://dbpedia.org/class/yago/DataStructures"/>
+                <j.4:Array107939382 rdf:resource="http://dbpedia.org/class/yago/Array107939382"/>
+                <j.4:Arrangement105726596 rdf:resource="http://dbpedia.org/class/yago/Arrangement105726596"/>
+                <j.4:Arrays rdf:resource="http://dbpedia.org/class/yago/Arrays"/>
+                <j.4:DataStructure105728493 rdf:resource="http://dbpedia.org/class/yago/DataStructure105728493"/>
+                <j.4:Group100031264 rdf:resource="http://dbpedia.org/class/yago/Group100031264"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/President">
+                <j.8:Presidente rdf:resource="http://it.dbpedia.org/resource/Presidente"/>
+                <j.1:Presiden rdf:resource="http://id.dbpedia.org/resource/Presiden"/>
+                <j.18:Lehendakari rdf:resource="http://eu.dbpedia.org/resource/Lehendakari"/>
+                <j.12:Presidente rdf:resource="http://es.dbpedia.org/resource/Presidente"/>
+                <j.13:Prezident rdf:resource="http://cs.dbpedia.org/resource/Prezident"/>
+                <j.11:Q30461 rdf:resource="http://wikidata.dbpedia.org/resource/Q30461"/>
+                <j.19:m.060c4 rdf:resource="http://rdf.freebase.com/ns/m.060c4"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/Illmatic">
+                <j.11:Q482994 rdf:resource="http://wikidata.dbpedia.org/resource/Q482994"/>
+                <j.17:MusicalComposition rdf:resource="http://umbel.org/umbel/rc/MusicalComposition"/>
+                <j.5:CreativeWork rdf:resource="http://schema.org/CreativeWork"/>
+                <j.3:MusicalWork rdf:resource="http://dbpedia.org/ontology/MusicalWork"/>
+                <j.5:MusicAlbum rdf:resource="http://schema.org/MusicAlbum"/>
+                <j.17:Album_IBO rdf:resource="http://umbel.org/umbel/rc/Album_IBO"/>
+                <j.3:Album rdf:resource="http://dbpedia.org/ontology/Album"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <j.3:Work rdf:resource="http://dbpedia.org/ontology/Work"/>
+                <j.9:InformationEntity rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://www.cnn.com/ELECTION/2008/candidates/barack.obama.html">
+                <j.6:Array_data_structure rdf:resource="http://dbpedia.org/resource/Array_data_structure"/>
+                <j.6:Illmatic rdf:resource="http://dbpedia.org/resource/Illmatic"/>
+                <j.6:Candidate rdf:resource="http://dbpedia.org/resource/Candidate"/>
+                <j.6:President rdf:resource="http://dbpedia.org/resource/President"/>
+                <j.6:White_House rdf:resource="http://dbpedia.org/resource/White_House"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="http://dbpedia.org/resource/White_House">
+                <j.0:_Feature rdf:resource="http://www.opengis.net/gml/_Feature"/>
+                <j.3:Place rdf:resource="http://dbpedia.org/ontology/Place"/>
+                <j.10:Q532 rdf:resource="http://dbpedia.org/ontology/Wikidata:Q532"/>
+                <j.17:Building rdf:resource="http://umbel.org/umbel/rc/Building"/>
+                <j.15:Location rdf:resource="http://www.ontologydesignpatterns.org/ont/d0.owl#Location"/>
+                <j.5:Place rdf:resource="http://schema.org/Place"/>
+                <j.17:Location_Underspecified rdf:resource="http://umbel.org/umbel/rc/Location_Underspecified"/>
+                <j.3:ArchitecturalStructure rdf:resource="http://dbpedia.org/ontology/ArchitecturalStructure"/>
+                <j.3:Building rdf:resource="http://dbpedia.org/ontology/Building"/>
+                <owl:Thing rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        </rdf:Description>
+</rdf:RDF>
